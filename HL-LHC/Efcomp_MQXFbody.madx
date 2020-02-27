@@ -41,6 +41,6 @@ Rr_MQXFA=Rr_MQXF;
 Rr_MQXFB=Rr_MQXF;
 
 
-call, file="slhc/errors/Efcomp_MQXFA.madx";
-call, file="slhc/errors/Efcomp_MQXFB.madx";
+call, file="errors/Efcomp_MQXFA.madx";
+call, file="errors/Efcomp_MQXFB.madx";
 
