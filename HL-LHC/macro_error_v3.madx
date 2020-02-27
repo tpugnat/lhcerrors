@@ -310,7 +310,8 @@ if (yfactref==-1){ ! odd x-sign flips
    bbb=sign*bbb;
 };
 
-erfact1=klref/(ooo!)*(rref)^(ooo);
+!erfact1=klref/(ooo!)*(rref)^(ooo);
+erfact1=klref*(rref)^(ooo);
 erfact2=erfact1*1/rref;
 erfact3=erfact2*2/rref; erfact4=erfact3*3/rref;
 erfact5=erfact4*4/rref; erfact6=erfact5*5/rref;
