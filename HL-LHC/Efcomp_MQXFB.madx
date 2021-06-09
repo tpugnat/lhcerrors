@@ -10,33 +10,41 @@
 exec new_magnetfamily(MQXFB); iap=0;
 
 !Q2a.R5
+if (print_errors==1){print, text="Errors for MQXFB.A2R5.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.A2R5.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad_inv(MQXFB);
 
 !Q2b.R5
+if (print_errors==1){print, text="Errors for MQXFB.B2R5.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.B2R5.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad(MQXFB);
 
 !Q2a.L5
+if (print_errors==1){print, text="Errors for MQXFB.A2L5.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.A2L5.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad(MQXFB);
 
 !Q2b.L5
+if (print_errors==1){print, text="Errors for MQXFB.B2L5.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.B2L5.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad_inv(MQXFB);
 
 !Q2a.R1
+if (print_errors==1){print, text="Errors for MQXFB.A2R1.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.A2R1.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad_inv(MQXFB);
 
 !Q2b.R1
+if (print_errors==1){print, text="Errors for MQXFB.B2R1.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.B2R1.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad(MQXFB);
 
 !Q2a.L1
+if (print_errors==1){print, text="Errors for MQXFB.A2L1.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.A2L1.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad(MQXFB);
 
 !Q2b.L1
+if (print_errors==1){print, text="Errors for MQXFB.B2L1.*";};
 select,flag=error,clear;select,flag=error,pattern="^MQXFB\.B2L1.*[0-9]$";
 exec new_magnetindividual(MQXFB,iap);exec errorgenerate_quad_inv(MQXFB);
