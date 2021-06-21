@@ -67,12 +67,16 @@ assign_mbh_err(mbn,irn,apl,apr): macro={
       if(apr==1) {iapAr=2;iapBr=1;};
       if(apr==2) {iapAr=1;iapBr=2;};
     };
+    if (print_errors==1){print, text="Errors for MBH.BmbnLirn.*";};
     select,flag=error,clear; select,flag=error,pattern="^MBH\.BmbnLirn.*$";
     exec new_magnetindividual(MBH,iapBL);exec errorgenerate_dip(MBH);
+    if (print_errors==1){print, text="Errors for MBH.AmbnLirn.*";};
     select,flag=error,clear; select,flag=error,pattern="^MBH\.AmbnLirn.*$";
     exec new_magnetindividual(MBH,iapAL);exec errorgenerate_dip_inv(MBH);
+    if (print_errors==1){print, text="Errors for MBH.AmbnRirn.*";};
     select,flag=error,clear; select,flag=error,pattern="^MBH\.AmbnRirn.*$";
     exec new_magnetindividual(MBH,iapAR);exec errorgenerate_dip(MBH);
+    if (print_errors==1){print, text="Errors for MBH.BmbnRirn.*";};
     select,flag=error,clear; select,flag=error,pattern="^MBH\.BmbnRirn.*$";
     exec new_magnetindividual(MBH,iapBR);exec errorgenerate_dip_inv(MBH);
   };
