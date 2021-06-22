@@ -10,21 +10,25 @@ exec new_magnetfamily(MBXAB);
 iap=0;
 
 !D1.L1 
+if (print_errors==1){print, text="Errors for MBXF.4L1.*";};
 select,flag=error,clear;select,flag=error,pattern="^MBXF\.4L1.*$";
 exec new_magnetindividual(MBXAB,iap);exec errorgenerate_dip(MBXAB);
 
 
 !D1.R1
+if (print_errors==1){print, text="Errors for MBXF.4R1.*";};
 select,flag=error,clear;select,flag=error,pattern="^MBXF\.4R1.*$";
 exec new_magnetindividual(MBXAB,iap);exec errorgenerate_dip_inv(MBXAB);
 
 
 !D1.L5
+if (print_errors==1){print, text="Errors for MBXF.4L5.*";};
 select,flag=error,clear;select,flag=error,pattern="^MBXF\.4L5.*$";
 exec new_magnetindividual(MBXAB,iap);exec errorgenerate_dip(MBXAB);
 
 
-!D1.R5 
+!D1.R5
+if (print_errors==1){print, text="Errors for MBXF.4R5.*";};
 select,flag=error,clear;select,flag=error,pattern="^MBXF\.4R5.*$";
 exec new_magnetindividual(MBXAB,iap);exec errorgenerate_dip_inv(MBXAB);
 

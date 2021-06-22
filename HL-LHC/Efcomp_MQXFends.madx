@@ -2,23 +2,26 @@
 ! Update Q2 has opposite connection (due to MCBXF):  IP  (=Q1a Q1b=)  (=MCBXFBa Q2a=)  (=Q2b MCBXFBb=)  (=Q3a Q3b=) 
 
 generate_fringe(eee,ttt,llrr,ks,kref,isinv):macro={
-klref=kref*l.ttt*ks;
-value,klref,Rr_ttt,l.ttt;
-exec,new_magnetfamily(ttt);
-exec,new_magnetindividual(ttt,iap);
-select,flag=error,clear;select,flag=error,pattern="^eee..llrr$";
-print,text="^eee..llrr$";
-exec,errorgenerate_abs(ttt,isinv,1,klref);
+  klref=kref*l.ttt*ks;
+  exec,new_magnetfamily(ttt);
+  exec,new_magnetindividual(ttt,iap);
+  select,flag=error,clear;select,flag=error,pattern="^eee..llrr$";
+  if (print_errors==1){
+    print, text="Errors for fringe llrr of eee.*";
+    value,klref,Rr_ttt,l.ttt;
+  };
+  exec,errorgenerate_abs(ttt,isinv,1,klref);
 };
 
 generate_fringe_lr(eee,ttt,ks,kref,isinv):macro={
-print,text="eee,tttcs,FL,kref,isinv";
-if(isinv==0){
-exec,generate_fringe(eee,tttcs,FL,ks,kref,isinv);
-exec,generate_fringe(eee,tttnc,FR,ks,kref,isinv);};
-if(isinv==1){
-exec,generate_fringe(eee,tttnc,FL,ks,kref,isinv);
-exec,generate_fringe(eee,tttcs,FR,ks,kref,isinv);};
+  if(isinv==0){
+    exec,generate_fringe(eee,tttcs,FL,ks,kref,isinv);
+    exec,generate_fringe(eee,tttnc,FR,ks,kref,isinv);
+  };
+  if(isinv==1){
+    exec,generate_fringe(eee,tttnc,FL,ks,kref,isinv);
+    exec,generate_fringe(eee,tttcs,FR,ks,kref,isinv);
+  };
 };
 
 
