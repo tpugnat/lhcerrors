@@ -3,9 +3,11 @@
 ! Connections do not matter, as only random errors are assigned
 ! Choose for the right side of IP:         IP  (.. CP=)     => all inverted
 ! Hence for the left side of IP: none inverted
+! T. Pugnat Sep 2022
+! Change routine such that orientation is given by tables instead of hardcoded
 
 
-iap=0;        ! single-bore magnets
+
 
 ! -----------------------------------------------------------------------
 ! ***********************      A2 CORRECTOR      ************************
@@ -13,12 +15,12 @@ iap=0;        ! single-bore magnets
 exec new_magnetfamily(MQSXF);                 ! systematic error
 klRef_L=l.MQSXF;
 klRef_MQSXF_abs = Kmax_MQSXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=1;
 
-inv_MQSXF=0;
 if (print_errors==1){print, text="Errors for MQSXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KQSX3.L1==0.){
+    if (KQSX3.L1==0.){
       sign_MQSXF.3L1 = 1;
     } else {
       sign_MQSXF.3L1 = KQSX3.L1 / ABS(KQSX3.L1);
@@ -30,13 +32,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MQSXF = KQSX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MQSXF\.3L1\.\.r$";
-exec new_magnetindividual(MQSXF,iap);exec errorgenerate_abs(MQSXF, inv_MQSXF, 1, klRef_MQSXF);
+exec Efcomp_Random_Multi(MQSXF, MQSXF.3L1, abs_or_rel, order);
 
-inv_MQSXF=1;
 if (print_errors==1){print, text="Errors for MQSXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KQSX3.R1==0.){
+    if (KQSX3.R1==0.){
       sign_MQSXF.3R1 = 1;
     } else {
       sign_MQSXF.3R1 = KQSX3.R1 / ABS(KQSX3.R1);
@@ -48,13 +49,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MQSXF = KQSX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MQSXF\.3R1\.\.r$";
-exec new_magnetindividual(MQSXF,iap);exec errorgenerate_abs(MQSXF, inv_MQSXF, 1, klRef_MQSXF);
+exec Efcomp_Random_Multi(MQSXF, MQSXF.3R1, abs_or_rel, order);
 
-inv_MQSXF=0;
 if (print_errors==1){print, text="Errors for MQSXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KQSX3.L5==0.){
+    if (KQSX3.L5==0.){
       sign_MQSXF.3L5 = 1;
     } else {
       sign_MQSXF.3L5 = KQSX3.L5 / ABS(KQSX3.L5);
@@ -66,13 +66,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MQSXF = KQSX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MQSXF\.3L5\.\.r$";
-exec new_magnetindividual(MQSXF,iap);exec errorgenerate_abs(MQSXF, inv_MQSXF, 1, klRef_MQSXF);
+exec Efcomp_Random_Multi(MQSXF, MQSXF.3L5, abs_or_rel, order);
 
-inv_MQSXF=1;
 if (print_errors==1){print, text="Errors for MQSXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KQSX3.R5==0.){
+    if (KQSX3.R5==0.){
       sign_MQSXF.3R5 = 1;
     } else {
       sign_MQSXF.3R5 = KQSX3.R5 / ABS(KQSX3.R5);
@@ -84,7 +83,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MQSXF = KQSX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MQSXF\.3R5\.\.r$";
-exec new_magnetindividual(MQSXF,iap);exec errorgenerate_abs(MQSXF, inv_MQSXF, 1, klRef_MQSXF);
+exec Efcomp_Random_Multi(MQSXF, MQSXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -93,12 +92,12 @@ exec new_magnetindividual(MQSXF,iap);exec errorgenerate_abs(MQSXF, inv_MQSXF, 1,
 exec new_magnetfamily(MCSXF);                 ! systematic error
 klRef_L=l.MCSXF;
 klRef_MCSXF_abs = Kmax_MCSXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=2;
 
-inv_MCSXF=0;
 if (print_errors==1){print, text="Errors for MCSXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSX3.L1==0.){
+    if (KCSX3.L1==0.){
       sign_MCSXF.3L1 = 1;
     } else {
       sign_MCSXF.3L1 = KCSX3.L1 / ABS(KCSX3.L1);
@@ -110,13 +109,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSXF = KCSX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSXF\.3L1\.\.r$";
-exec new_magnetindividual(MCSXF,iap);exec errorgenerate_abs(MCSXF, inv_MCSXF, 2, klRef_MCSXF);
+exec Efcomp_Random_Multi(MCSXF, MCSXF.3L1, abs_or_rel, order);
 
-inv_MCSXF=1;
 if (print_errors==1){print, text="Errors for MCSXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSX3.R1==0.){
+    if (KCSX3.R1==0.){
       sign_MCSXF.3R1 = 1;
     } else {
       sign_MCSXF.3R1 = KCSX3.R1 / ABS(KCSX3.R1);
@@ -128,13 +126,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSXF = KCSX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSXF\.3R1\.\.r$";
-exec new_magnetindividual(MCSXF,iap);exec errorgenerate_abs(MCSXF, inv_MCSXF, 2, klRef_MCSXF);
+exec Efcomp_Random_Multi(MCSXF, MCSXF.3R1, abs_or_rel, order);
 
-inv_MCSXF=0;
 if (print_errors==1){print, text="Errors for MCSXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSX3.L5==0.){
+    if (KCSX3.L5==0.){
       sign_MCSXF.3L5 = 1;
     } else {
       sign_MCSXF.3L5 = KCSX3.L5 / ABS(KCSX3.L5);
@@ -146,13 +143,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSXF = KCSX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSXF\.3L5\.\.r$";
-exec new_magnetindividual(MCSXF,iap);exec errorgenerate_abs(MCSXF, inv_MCSXF, 2, klRef_MCSXF);
+exec Efcomp_Random_Multi(MCSXF, MCSXF.3L5, abs_or_rel, order);
 
-inv_MCSXF=1;
 if (print_errors==1){print, text="Errors for MCSXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSX3.R5==0.){
+    if (KCSX3.R5==0.){
       sign_MCSXF.3R5 = 1;
     } else {
       sign_MCSXF.3R5 = KCSX3.R5 / ABS(KCSX3.R5);
@@ -164,7 +160,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSXF = KCSX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSXF\.3R5\.\.r$";
-exec new_magnetindividual(MCSXF,iap);exec errorgenerate_abs(MCSXF, inv_MCSXF, 2, klRef_MCSXF);
+exec Efcomp_Random_Multi(MCSXF, MCSXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -173,12 +169,12 @@ exec new_magnetindividual(MCSXF,iap);exec errorgenerate_abs(MCSXF, inv_MCSXF, 2,
 exec new_magnetfamily(MCSSXF);                 ! systematic error
 klRef_L=l.MCSSXF*bv_aux;       ! Main field gets a sign flip in case of Beam 4
 klRef_MCSSXF_abs = Kmax_MCSSXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=2;
 
-inv_MCSSXF=0;
 if (print_errors==1){print, text="Errors for MCSSXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSSX3.L1==0.){
+    if (KCSSX3.L1==0.){
       sign_MCSSXF.3L1 = 1;
     } else {
       sign_MCSSXF.3L1 = KCSSX3.L1 / ABS(KCSSX3.L1);
@@ -190,13 +186,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSSXF = KCSSX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSSXF\.3L1\.\.r$";
-exec new_magnetindividual(MCSSXF,iap);exec errorgenerate_abs(MCSSXF, inv_MCSSXF, 2, klRef_MCSSXF);
+exec Efcomp_Random_Multi(MCSSXF, MCSSXF.3L1, abs_or_rel, order);
 
-inv_MCSSXF=1;
 if (print_errors==1){print, text="Errors for MCSSXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSSX3.R1==0.){
+    if (KCSSX3.R1==0.){
       sign_MCSSXF.3R1 = 1;
     } else {
       sign_MCSSXF.3R1 = KCSSX3.R1 / ABS(KCSSX3.R1);
@@ -208,13 +203,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSSXF = KCSSX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSSXF\.3R1\.\.r$";
-exec new_magnetindividual(MCSSXF,iap);exec errorgenerate_abs(MCSSXF, inv_MCSSXF, 2, klRef_MCSSXF);
+exec Efcomp_Random_Multi(MCSSXF, MCSSXF.3R1, abs_or_rel, order);
 
-inv_MCSSXF=0;
 if (print_errors==1){print, text="Errors for MCSSXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSSX3.L5==0.){
+    if (KCSSX3.L5==0.){
       sign_MCSSXF.3L5 = 1;
     } else {
       sign_MCSSXF.3L5 = KCSSX3.L5 / ABS(KCSSX3.L5);
@@ -226,13 +220,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSSXF = KCSSX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSSXF\.3L5\.\.r$";
-exec new_magnetindividual(MCSSXF,iap);exec errorgenerate_abs(MCSSXF, inv_MCSSXF, 2, klRef_MCSSXF);
+exec Efcomp_Random_Multi(MCSSXF, MCSSXF.3L5, abs_or_rel, order);
 
-inv_MCSSXF=1;
 if (print_errors==1){print, text="Errors for MCSSXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCSSX3.R5==0.){
+    if (KCSSX3.R5==0.){
       sign_MCSSXF.3R5 = 1;
     } else {
       sign_MCSSXF.3R5 = KCSSX3.R5 / ABS(KCSSX3.R5);
@@ -244,7 +237,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MCSSXF = KCSSX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCSSXF\.3R5\.\.r$";
-exec new_magnetindividual(MCSSXF,iap);exec errorgenerate_abs(MCSSXF, inv_MCSSXF, 2, klRef_MCSSXF);
+exec Efcomp_Random_Multi(MCSSXF, MCSSXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -253,12 +246,12 @@ exec new_magnetindividual(MCSSXF,iap);exec errorgenerate_abs(MCSSXF, inv_MCSSXF,
 exec new_magnetfamily(MCOXF);                 ! systematic error
 klRef_L=l.MCOXF*bv_aux;       ! Main field gets a sign flip in case of Beam 4
 klRef_MCOXF_abs = Kmax_MCOXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=3;
 
-inv_MCOXF=0;
 if (print_errors==1){print, text="Errors for MCOXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOX3.L1==0.){
+    if (KCOX3.L1==0.){
       sign_MCOXF.3L1 = 1;
     } else {
       sign_MCOXF.3L1 = KCOX3.L1 / ABS(KCOX3.L1);
@@ -270,13 +263,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOXF = KCOX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOXF\.3L1\.\.r$";
-exec new_magnetindividual(MCOXF,iap);exec errorgenerate_abs(MCOXF, inv_MCOXF, 3, klRef_MCOXF);
+exec Efcomp_Random_Multi(MCOXF, MCOXF.3L1, abs_or_rel, order);
 
-inv_MCOXF=1;
 if (print_errors==1){print, text="Errors for MCOXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOX3.R1==0.){
+    if (KCOX3.R1==0.){
       sign_MCOXF.3R1 = 1;
     } else {
       sign_MCOXF.3R1 = KCOX3.R1 / ABS(KCOX3.R1);
@@ -288,13 +280,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOXF = KCOX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOXF\.3R1\.\.r$";
-exec new_magnetindividual(MCOXF,iap);exec errorgenerate_abs(MCOXF, inv_MCOXF, 3, klRef_MCOXF);
+exec Efcomp_Random_Multi(MCOXF, MCOXF.3R1, abs_or_rel, order);
 
-inv_MCOXF=0;
 if (print_errors==1){print, text="Errors for MCOXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOX3.L5==0.){
+    if (KCOX3.L5==0.){
       sign_MCOXF.3L5 = 1;
     } else {
       sign_MCOXF.3L5 = KCOX3.L5 / ABS(KCOX3.L5);
@@ -306,13 +297,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOXF = KCOX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOXF\.3L5\.\.r$";
-exec new_magnetindividual(MCOXF,iap);exec errorgenerate_abs(MCOXF, inv_MCOXF, 3, klRef_MCOXF);
+exec Efcomp_Random_Multi(MCOXF, MCOXF.3L5, abs_or_rel, order);
 
-inv_MCOXF=1;
 if (print_errors==1){print, text="Errors for MCOXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOX3.R5==0.){
+    if (KCOX3.R5==0.){
       sign_MCOXF.3R5 = 1;
     } else {
       sign_MCOXF.3R5 = KCOX3.R5 / ABS(KCOX3.R5);
@@ -324,7 +314,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOXF = KCOX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOXF\.3R5\.\.r$";
-exec new_magnetindividual(MCOXF,iap);exec errorgenerate_abs(MCOXF, inv_MCOXF, 3, klRef_MCOXF);
+exec Efcomp_Random_Multi(MCOXF, MCOXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -333,12 +323,12 @@ exec new_magnetindividual(MCOXF,iap);exec errorgenerate_abs(MCOXF, inv_MCOXF, 3,
 exec new_magnetfamily(MCOSXF);                 ! systematic error
 klRef_L=l.MCOSXF;
 klRef_MCOSXF_abs = Kmax_MCOSXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=3;
 
-inv_MCOSXF=0;
 if (print_errors==1){print, text="Errors for MCOSXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOSX3.L1==0.){
+    if (KCOSX3.L1==0.){
       sign_MCOSXF.3L1 = 1;
     } else {
       sign_MCOSXF.3L1 = KCOSX3.L1 / ABS(KCOSX3.L1);
@@ -350,13 +340,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOSXF = KCOSX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOSXF\.3L1\.\.r$";
-exec new_magnetindividual(MCOSXF,iap);exec errorgenerate_abs(MCOSXF, inv_MCOSXF, 3, klRef_MCOSXF);
+exec Efcomp_Random_Multi(MCOSXF, MCOSXF.3L1, abs_or_rel, order);
 
-inv_MCOSXF=1;
 if (print_errors==1){print, text="Errors for MCOSXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOSX3.R1==0.){
+    if (KCOSX3.R1==0.){
       sign_MCOSXF.3R1 = 1;
     } else {
       sign_MCOSXF.3R1 = KCOSX3.R1 / ABS(KCOSX3.R1);
@@ -368,13 +357,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOSXF = KCOSX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOSXF\.3R1\.\.r$";
-exec new_magnetindividual(MCOSXF,iap);exec errorgenerate_abs(MCOSXF, inv_MCOSXF, 3, klRef_MCOSXF);
+exec Efcomp_Random_Multi(MCOSXF, MCOSXF.3R1, abs_or_rel, order);
 
-inv_MCOSXF=0;
 if (print_errors==1){print, text="Errors for MCOSXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOSX3.L5==0.){
+    if (KCOSX3.L5==0.){
       sign_MCOSXF.3L5 = 1;
     } else {
       sign_MCOSXF.3L5 = KCOSX3.L5 / ABS(KCOSX3.L5);
@@ -386,13 +374,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOSXF = KCOSX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOSXF\.3L5\.\.r$";
-exec new_magnetindividual(MCOSXF,iap);exec errorgenerate_abs(MCOSXF, inv_MCOSXF, 3, klRef_MCOSXF);
+exec Efcomp_Random_Multi(MCOSXF, MCOSXF.3L5, abs_or_rel, order);
 
-inv_MCOSXF=1;
 if (print_errors==1){print, text="Errors for MCOSXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCOSX3.R5==0.){
+    if (KCOSX3.R5==0.){
       sign_MCOSXF.3R5 = 1;
     } else {
       sign_MCOSXF.3R5 = KCOSX3.R5 / ABS(KCOSX3.R5);
@@ -404,7 +391,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MCOSXF = KCOSX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCOSXF\.3R5\.\.r$";
-exec new_magnetindividual(MCOSXF,iap);exec errorgenerate_abs(MCOSXF, inv_MCOSXF, 3, klRef_MCOSXF);
+exec Efcomp_Random_Multi(MCOSXF, MCOSXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -413,12 +400,12 @@ exec new_magnetindividual(MCOSXF,iap);exec errorgenerate_abs(MCOSXF, inv_MCOSXF,
 exec new_magnetfamily(MCDXF);                 ! systematic error
 klRef_L=l.MCDXF;
 klRef_MCDXF_abs = Kmax_MCDXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=4;
 
-inv_MCDXF=0;
 if (print_errors==1){print, text="Errors for MCDXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDX3.L1==0.){
+    if (KCDX3.L1==0.){
       sign_MCDXF.3L1 = 1;
     } else {
       sign_MCDXF.3L1 = KCDX3.L1 / ABS(KCDX3.L1);
@@ -430,13 +417,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDXF = KCDX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDXF\.3L1\.\.r$";
-exec new_magnetindividual(MCDXF,iap);exec errorgenerate_abs(MCDXF, inv_MCDXF, 4, klRef_MCDXF);
+exec Efcomp_Random_Multi(MCDXF, MCDXF.3L1, abs_or_rel, order);
 
-inv_MCDXF=1;
 if (print_errors==1){print, text="Errors for MCDXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDX3.R1==0.){
+    if (KCDX3.R1==0.){
       sign_MCDXF.3R1 = 1;
     } else {
       sign_MCDXF.3R1 = KCDX3.R1 / ABS(KCDX3.R1);
@@ -448,13 +434,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDXF = KCDX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDXF\.3R1\.\.r$";
-exec new_magnetindividual(MCDXF,iap);exec errorgenerate_abs(MCDXF, inv_MCDXF, 4, klRef_MCDXF);
+exec Efcomp_Random_Multi(MCDXF, MCDXF.3R1, abs_or_rel, order);
 
-inv_MCDXF=0;
 if (print_errors==1){print, text="Errors for MCDXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDX3.L5==0.){
+    if (KCDX3.L5==0.){
       sign_MCDXF.3L5 = 1;
     } else {
       sign_MCDXF.3L5 = KCDX3.L5 / ABS(KCDX3.L5);
@@ -466,13 +451,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDXF = KCDX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDXF\.3L5\.\.r$";
-exec new_magnetindividual(MCDXF,iap);exec errorgenerate_abs(MCDXF, inv_MCDXF, 4, klRef_MCDXF);
+exec Efcomp_Random_Multi(MCDXF, MCDXF.3L5, abs_or_rel, order);
 
-inv_MCDXF=1;
 if (print_errors==1){print, text="Errors for MCDXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDX3.R5==0.){
+    if (KCDX3.R5==0.){
       sign_MCDXF.3R5 = 1;
     } else {
       sign_MCDXF.3R5 = KCDX3.R5 / ABS(KCDX3.R5);
@@ -484,7 +468,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDXF = KCDX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDXF\.3R5\.\.r$";
-exec new_magnetindividual(MCDXF,iap);exec errorgenerate_abs(MCDXF, inv_MCDXF, 4, klRef_MCDXF);
+exec Efcomp_Random_Multi(MCDXF, MCDXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -493,12 +477,12 @@ exec new_magnetindividual(MCDXF,iap);exec errorgenerate_abs(MCDXF, inv_MCDXF, 4,
 exec new_magnetfamily(MCDSXF);                 ! systematic error
 klRef_L=l.MCDSXF*bv_aux;       ! Main field gets a sign flip in case of Beam 4
 klRef_MCDSXF_abs = Kmax_MCDSXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=4;
 
-inv_MCDSXF=0;
 if (print_errors==1){print, text="Errors for MCDSXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDSX3.L1==0.){
+    if (KCDSX3.L1==0.){
       sign_MCDSXF.3L1 = 1;
     } else {
       sign_MCDSXF.3L1 = KCDSX3.L1 / ABS(KCDSX3.L1);
@@ -510,13 +494,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDSXF = KCDSX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDSXF\.3L1\.\.r$";
-exec new_magnetindividual(MCDSXF,iap);exec errorgenerate_abs(MCDSXF, inv_MCDSXF, 4, klRef_MCDSXF);
+exec Efcomp_Random_Multi(MCDSXF, MCDSXF.3L1, abs_or_rel, order);
 
-inv_MCDSXF=1;
 if (print_errors==1){print, text="Errors for MCDSXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDSX3.R1==0.){
+    if (KCDSX3.R1==0.){
       sign_MCDSXF.3R1 = 1;
     } else {
       sign_MCDSXF.3R1 = KCDSX3.R1 / ABS(KCDSX3.R1);
@@ -528,14 +511,13 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDSXF = KCDSX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDSXF\.3R1\.\.r$";
-exec new_magnetindividual(MCDSXF,iap);exec errorgenerate_abs(MCDSXF, inv_MCDSXF, 4, klRef_MCDSXF);
+exec Efcomp_Random_Multi(MCDSXF, MCDSXF.3R1, abs_or_rel, order);
 
-inv_MCDSXF=0;
 if (print_errors==1){print, text="Errors for MCDSXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDSX3.L5==0.){
-      sign_MCDSXF.3L5 = 1;
+    if (KCDSX3.L5==0.){
+       sign_MCDSXF.3L5 = 1;
     } else {
       sign_MCDSXF.3L5 = KCDSX3.L5 / ABS(KCDSX3.L5);
     };
@@ -546,13 +528,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDSXF = KCDSX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDSXF\.3L5\.\.r$";
-exec new_magnetindividual(MCDSXF,iap);exec errorgenerate_abs(MCDSXF, inv_MCDSXF, 4, klRef_MCDSXF);
+exec Efcomp_Random_Multi(MCDSXF, MCDSXF.3L5, abs_or_rel, order);
 
-inv_MCDSXF=1;
 if (print_errors==1){print, text="Errors for MCDSXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCDSX3.R5==0.){
+    if (KCDSX3.R5==0.){
       sign_MCDSXF.3R5 = 1;
     } else {
       sign_MCDSXF.3R5 = KCDSX3.R5 / ABS(KCDSX3.R5);
@@ -564,7 +545,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MCDSXF = KCDSX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCDSXF\.3R5\.\.r$";
-exec new_magnetindividual(MCDSXF,iap);exec errorgenerate_abs(MCDSXF, inv_MCDSXF, 4, klRef_MCDSXF);
+exec Efcomp_Random_Multi(MCDSXF, MCDSXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -573,12 +554,12 @@ exec new_magnetindividual(MCDSXF,iap);exec errorgenerate_abs(MCDSXF, inv_MCDSXF,
 exec new_magnetfamily(MCTXF);                 ! systematic error
 klRef_L=l.MCTXF*bv_aux;       ! Main field gets a sign flip in case of Beam 4
 klRef_MCTXF_abs = Kmax_MCTXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=5;
 
-inv_MCTXF=0;
 if (print_errors==1){print, text="Errors for MCTXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTX3.L1==0.){
+    if (KCTX3.L1==0.){
       sign_MCTXF.3L1 = 1;
     } else {
       sign_MCTXF.3L1 = KCTX3.L1 / ABS(KCTX3.L1);
@@ -590,13 +571,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTXF = KCTX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTXF\.3L1\.\.r$";
-exec new_magnetindividual(MCTXF,iap);exec errorgenerate_abs(MCTXF, inv_MCTXF, 5, klRef_MCTXF);
+exec Efcomp_Random_Multi(MCTXF, MCTXF.3L1, abs_or_rel, order);
 
-inv_MCTXF=1;
 if (print_errors==1){print, text="Errors for MCTXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTX3.R1==0.){
+    if (KCTX3.R1==0.){
       sign_MCTXF.3R1 = 1;
     } else {
       sign_MCTXF.3R1 = KCTX3.R1 / ABS(KCTX3.R1);
@@ -608,13 +588,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTXF = KCTX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTXF\.3R1\.\.r$";
-exec new_magnetindividual(MCTXF,iap);exec errorgenerate_abs(MCTXF, inv_MCTXF, 5, klRef_MCTXF);
+exec Efcomp_Random_Multi(MCTXF, MCTXF.3R1, abs_or_rel, order);
 
-inv_MCTXF=0;
 if (print_errors==1){print, text="Errors for MCTXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTX3.L5==0.){
+    if (KCTX3.L5==0.){
       sign_MCTXF.3L5 = 1;
     } else {
       sign_MCTXF.3L5 = KCTX3.L5 / ABS(KCTX3.L5);
@@ -626,13 +605,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTXF = KCTX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTXF\.3L5\.\.r$";
-exec new_magnetindividual(MCTXF,iap);exec errorgenerate_abs(MCTXF, inv_MCTXF, 5, klRef_MCTXF);
+exec Efcomp_Random_Multi(MCTXF, MCTXF.3L5, abs_or_rel, order);
 
-inv_MCTXF=1;
 if (print_errors==1){print, text="Errors for MCTXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTX3.R5==0.){
+    if (KCTX3.R5==0.){
       sign_MCTXF.3R5 = 1;
     } else {
       sign_MCTXF.3R5 = KCTX3.R5 / ABS(KCTX3.R5);
@@ -644,7 +622,7 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTXF = KCTX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTXF\.3R5\.\.r$";
-exec new_magnetindividual(MCTXF,iap);exec errorgenerate_abs(MCTXF, inv_MCTXF, 5, klRef_MCTXF);
+exec Efcomp_Random_Multi(MCTXF, MCTXF.3R5, abs_or_rel, order);
 
 
 ! -----------------------------------------------------------------------
@@ -653,12 +631,13 @@ exec new_magnetindividual(MCTXF,iap);exec errorgenerate_abs(MCTXF, inv_MCTXF, 5,
 exec new_magnetfamily(MCTSXF);                 ! systematic error
 klRef_L=l.MCTSXF;
 klRef_MCTSXF_abs = Kmax_MCTSXF*CLIGHT/(1E9*NRJ);
+abs_or_rel:=1; order:=5;
 
-inv_MCTSXF=0;
+
 if (print_errors==1){print, text="Errors for MCTSXF.3L1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTSX3.L1==0.){
+    if (KCTSX3.L1==0.){
       sign_MCTSXF.3L1 = 1;
     } else {
       sign_MCTSXF.3L1 = KCTSX3.L1 / ABS(KCTSX3.L1);
@@ -670,13 +649,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTSXF = KCTSX3.L1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTSXF\.3L1\.\.r$";
-exec new_magnetindividual(MCTSXF,iap);exec errorgenerate_abs(MCTSXF, inv_MCTSXF, 5, klRef_MCTSXF);
+exec Efcomp_Random_Multi(MCTSXF, MCTSXF.3L1, abs_or_rel, order);
 
-inv_MCTSXF=1;
 if (print_errors==1){print, text="Errors for MCTSXF.3R1";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTSX3.R1==0.){
+    if (KCTSX3.R1==0.){
       sign_MCTSXF.3R1 = 1;
     } else {
       sign_MCTSXF.3R1 = KCTSX3.R1 / ABS(KCTSX3.R1);
@@ -688,13 +666,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTSXF = KCTSX3.R1*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTSXF\.3R1\.\.r$";
-exec new_magnetindividual(MCTSXF,iap);exec errorgenerate_abs(MCTSXF, inv_MCTSXF, 5, klRef_MCTSXF);
+exec Efcomp_Random_Multi(MCTSXF, MCTSXF.3R1, abs_or_rel, order);
 
-inv_MCTSXF=0;
 if (print_errors==1){print, text="Errors for MCTSXF.3L5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTSX3.L5==0.){
+    if (KCTSX3.L5==0.){
       sign_MCTSXF.3L5 = 1;
     } else {
       sign_MCTSXF.3L5 = KCTSX3.L5 / ABS(KCTSX3.L5);
@@ -706,13 +683,12 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTSXF = KCTSX3.L5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTSXF\.3L5\.\.r$";
-exec new_magnetindividual(MCTSXF,iap);exec errorgenerate_abs(MCTSXF, inv_MCTSXF, 5, klRef_MCTSXF);
+exec Efcomp_Random_Multi(MCTSXF, MCTSXF.3L5, abs_or_rel, order);
 
-inv_MCTSXF=1;
 if (print_errors==1){print, text="Errors for MCTSXF.3R5";};
 if (NLC_errors_Kref_max==1){
   if (NLC_errors_Kref_autosign==1){
-  	if (KCTSX3.R5==0.){
+    if (KCTSX3.R5==0.){
       sign_MCTSXF.3R5 = 1;
     } else {
       sign_MCTSXF.3R5 = KCTSX3.R5 / ABS(KCTSX3.R5);
@@ -724,8 +700,6 @@ if (NLC_errors_Kref_max==1){
   klRef_MCTSXF = KCTSX3.R5*klRef_L;
 };
 select,flag=error,clear;select,flag=error,pattern="^MCTSXF\.3R5\.\.r$";
-exec new_magnetindividual(MCTSXF,iap);exec errorgenerate_abs(MCTSXF, inv_MCTSXF, 5, klRef_MCTSXF);
-
-
+exec Efcomp_Random_Multi(MCTSXF, MCTSXF.3R5, abs_or_rel, order);
 
 return;

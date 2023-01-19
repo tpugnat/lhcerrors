@@ -8,6 +8,8 @@ if ( ver_hllhc_optics < 1.3) {
 !  bug corrected in reset_MQX_corr 12/05/2009 (the IT correction was always on)
 !! S. Fartoukh March 2012 update the error assignement routine for an arbitrary ref radius (defined in the error table) 
 !  and the resetIT corrector routine for new IT correctors
+!! T. Pugnat Sep. 2022: new macros for error generation in HL-LHC magnets using
+!  external table for magnets orientation.
 !-------------------------------------------------------------------------------
 
 
@@ -572,4 +574,106 @@ Efcomp_Measured_Quad_Switch(slot1,slot2) : macro = {
   if (inout == 0) {exec, Set_Quadru_Mult(slot1, slot2)   ;} ;
   if (inout == 1) {exec, Set_Quadru_Mult(slot1, slot2.v1);} ;
   if (inout == 2) {exec, Set_Quadru_Mult(slot1, slot2.v2);} ;
+};
+
+
+
+
+
+
+Efcomp_Random_Multi(typm, slot, abs_or_rel, order) : macro = {
+    ! abs_or_rel:=  0: relative strength  1: absolut stength
+    ! order     :=  magnet order (1: dipole, 2:quadrupole, ...)
+    
+    inout_B1     := table(HLLHCROTATIONS, slot.B1, inout);    // 0: single bore    else: double bore
+    inout_B2     := table(HLLHCROTATIONS, slot.B2, inout);    // 0: single bore    else: double bore
+    !inout     := table(HLLHCROTATIONS, typm, inout);    // 0: single bore    else: double bore
+    
+    print, text="NEW error routines used (master)";
+    value, ver_hllhc_optics, typm, slot, inout_B1, inout_B2, abs_or_rel, order;
+
+    if (inout_B1 == 0 && inout_B2 == 0) { 
+        exec, Efcomp_Random_Multi_SingleBore(typm, slot, abs_or_rel, order); }
+    else { 
+        exec, Efcomp_Random_Multi_DoubleBore(typm, slot, abs_or_rel, order); 
+    };
+};
+
+
+Efcomp_Random_Multi_SingleBore(typm, slot, abs_or_rel, order) : macro = {
+    ! abs_or_rel:=  0: relative strength  1: absolut stength
+    ! order     :=  magnet order (1: dipole, 2:quadrupole, ...)
+
+    yrotangle := table(HLLHCROTATIONS, slot, yrota);    // rotation around vertical axis
+    ! srotangle := table(HLLHCROTATIONS, slot, srota);    // rotation around beam axis
+    inout     := table(HLLHCROTATIONS, slot, inout);    // 0: single bore        1: outer     2: inner
+    if (yrotangle == 180) {yrotangle = 1;};
+    
+    print, text="NEW error routines used (Single Bore)";
+    value, ver_hllhc_optics, typm, slot, iap, inout, yrotangle, abs_or_rel, order;
+    
+    exec new_magnetindividual(typm,inout);
+
+    ! build aperture name from slotname
+
+    if (abs_or_rel == 0) { exec, errorgenerate_rel(typm,$yrotangle,$order); };
+    if (abs_or_rel == 1) { exec, errorgenerate_abs(typm,$yrotangle,$order,klRef_typm); };
+};
+
+
+Efcomp_Random_Multi_DoubleBore(typm, slot, abs_or_rel, order) : macro = {
+     ! abs_or_rel:=  0: relative strength  1: absolut stength
+     ! order     :=  magnet order (1: dipole, 2:quadrupole, ...)
+!    if (use_average_errors_typm == 0) {
+!        if (mylhcbeam == 1) { slot_new=slot.B1 };
+!        if (mylhcbeam  > 1) { slot_new=slot.B2 };
+!        yrotangle := table(HLLHCROTATIONS, slot_new, yrota);    // rotation around vertical axis
+!        ! srotangle := table(HLLHCROTATIONS, slot_new, srota);    // rotation around beam axis
+!        inout     := table(HLLHCROTATIONS, slot_new, inout);    // 0: single bore        1: outer     2: inner
+!        if (yrotangle == 180) {yrotangle = 1;};
+!
+!        exec new_magnetindividual(typm,inout);
+!    };
+    if (use_average_errors_typm == 0) {
+        yrotangle := table(HLLHCROTATIONS, slot.B1, yrota);    // rotation around vertical axis
+        ! srotangle := table(HLLHCROTATIONS, slot.B1, srota);    // rotation around beam axis
+        inout     := table(HLLHCROTATIONS, slot.B1, inout);    // 0: single bore        1: outer     2: inner
+        if (yrotangle == 180) {yrotangle = 1;};
+
+        exec new_magnetindividual(typm,inout);
+        exec average_of_randoms(ssr_B1,ssr,ssr);
+        
+        
+        yrotangle := table(HLLHCROTATIONS, slot.B2, yrota);    // rotation around vertical axis
+        ! srotangle := table(HLLHCROTATIONS, slot.B2, srota);    // rotation around beam axis
+        inout     := table(HLLHCROTATIONS, slot.B2, inout);    // 0: single bore        1: outer     2: inner
+        if (yrotangle == 180) {yrotangle = 1;};
+
+        exec new_magnetindividual(typm,inout);
+        exec average_of_randoms(ssr_B2,ssr,ssr);
+        
+        
+        exec average_of_randoms(ssr,ssr_B1,ssr_B2);
+        if (mylhcbeam == 1) { exec average_of_randoms(ssr,ssr_B1,ssr_B1); };
+        if (mylhcbeam  > 1) { exec average_of_randoms(ssr,ssr_B2,ssr_B2); };
+    };
+    if (use_average_errors_typm == 1) {
+        yrotangle   := table(HLLHCROTATIONS, slot.B1, yrota);    // rotation around vertical axis
+        ! srotangle   := table(HLLHCROTATIONS, slot.B1, srota);    // rotation around beam axis
+        if (yrotangle == 180) {yrotangle = 1;};
+        
+        inout_B1  := table(HLLHCROTATIONS, slot.B1, inout);    // 0: single bore        1: outer     2: inner
+        exec new_magnetindividual(typm,inout_B1);  exec average_of_randoms(ssr_B1,ssr,ssr);
+        
+        inout_B2  := table(HLLHCROTATIONS, slot.B2, inout);    // 0: single bore        1: outer     2: inner
+        exec new_magnetindividual(typm,inout_B2);  exec average_of_randoms(ssr_B2,ssr,ssr);
+        
+        exec average_of_randoms(ssr,ssr_B1,ssr_B2);
+    };
+    
+    print, text="NEW error routines used (Double Bore)";
+    value, ver_hllhc_optics, typm, slot, iap, inout, yrotangle, abs_or_rel, order;
+    
+    if (abs_or_rel == 0) { exec, errorgenerate_rel(typm,$yrotangle,$order); };
+    if (abs_or_rel == 1) { exec, errorgenerate_abs(typm,$yrotangle,$order,klRef_typm); };
 };
