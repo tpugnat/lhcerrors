@@ -1,9 +1,13 @@
 ! F.F. Van der Veken 2020
 ! Error table for the non-linear corrector magnets in the CP
+! T Pugnat 2024
+! Add extremum for uniform error distribution
 ! -----------------------------------------------------------------------
 ! Error type  : M - AVERAGE
 !               R - STANDARD
 !               U - UNCERTAINTY
+!               L - LOWER ESTIMATION FOR UNIFORM DISTRIBUTION
+!               T - UPPER ESTIMATION FOR UNIFORM DISTRIBUTION
 ! -----------------------------------------------------------------------
 
 

@@ -1,6 +1,8 @@
 !! F Van der Veken 2017
 !! Use to set all orders (except some) to zero
 !! This is used for the correction algorithm
+!! T Pugnat 2024
+!! Add extremum for uniform error distribution
 
 
 !                bn at inj 
@@ -19,6 +21,22 @@ b12M_MBRD_V1_inj :=  0.000 ;b12M_MBRD_V2_inj :=  0.000 ;b12U_MBRD_inj :=  0.000 
 b13M_MBRD_V1_inj :=  0.000 ;b13M_MBRD_V2_inj :=  0.000 ;b13U_MBRD_inj :=  0.000 ;b13R_MBRD_inj :=  0.000 ; 
 b14M_MBRD_V1_inj :=  0.000 ;b14M_MBRD_V2_inj :=  0.000 ;b14U_MBRD_inj :=  0.000 ;b14R_MBRD_inj :=  0.000 ; 
 b15M_MBRD_V1_inj :=  0.000 ;b15M_MBRD_V2_inj :=  0.000 ;b15U_MBRD_inj :=  0.000 ;b15R_MBRD_inj :=  0.000 ; 
+
+b1L_MBRD_inj  :=-4*0.000 ;b1T_MBRD_inj  := 4*0.000 ;
+b2L_MBRD_inj  :=-4*0.000 ;b2T_MBRD_inj  := 4*0.000 ;
+!b3L_MBRD_inj  :=-4*0.000 ;b3T_MBRD_inj  := 4*0.000 ;
+b4L_MBRD_inj  :=-4*0.000 ;b4T_MBRD_inj  := 4*0.000 ;
+b5L_MBRD_inj  :=-4*0.000 ;b5T_MBRD_inj  := 4*0.000 ;
+b6L_MBRD_inj  :=-4*0.000 ;b6T_MBRD_inj  := 4*0.000 ;
+b7L_MBRD_inj  :=-4*0.000 ;b7T_MBRD_inj  := 4*0.000 ;
+b8L_MBRD_inj  :=-4*0.000 ;b8T_MBRD_inj  := 4*0.000 ;
+b9L_MBRD_inj  :=-4*0.000 ;b9T_MBRD_inj  := 4*0.000 ;
+b10L_MBRD_inj :=-4*0.000 ;b10T_MBRD_inj := 4*0.000 ;
+b11L_MBRD_inj :=-4*0.000 ;b11T_MBRD_inj := 4*0.000 ;
+b12L_MBRD_inj :=-4*0.000 ;b12T_MBRD_inj := 4*0.000 ;
+b13L_MBRD_inj :=-4*0.000 ;b13T_MBRD_inj := 4*0.000 ;
+b14L_MBRD_inj :=-4*0.000 ;b14T_MBRD_inj := 4*0.000 ;
+b15L_MBRD_inj :=-4*0.000 ;b15T_MBRD_inj := 4*0.000 ;
  
 !                an at inj 
 a1M_MBRD_V1_inj  :=  0.000 ;a1M_MBRD_V2_inj  :=  0.000 ;a1U_MBRD_inj  :=  0.000 ;a1R_MBRD_inj  :=  0.000 ; 
@@ -36,6 +54,22 @@ a12M_MBRD_V1_inj :=  0.000 ;a12M_MBRD_V2_inj :=  0.000 ;a12U_MBRD_inj :=  0.000 
 a13M_MBRD_V1_inj :=  0.000 ;a13M_MBRD_V2_inj :=  0.000 ;a13U_MBRD_inj :=  0.000 ;a13R_MBRD_inj :=  0.000 ; 
 a14M_MBRD_V1_inj :=  0.000 ;a14M_MBRD_V2_inj :=  0.000 ;a14U_MBRD_inj :=  0.000 ;a14R_MBRD_inj :=  0.000 ; 
 a15M_MBRD_V1_inj :=  0.000 ;a15M_MBRD_V2_inj :=  0.000 ;a15U_MBRD_inj :=  0.000 ;a15R_MBRD_inj :=  0.000 ; 
+
+a1L_MBRD_inj  :=-4*0.000 ;a1T_MBRD_inj  := 4*0.000 ;
+a2L_MBRD_inj  :=-4*0.000 ;a2T_MBRD_inj  := 4*0.000 ;
+a3L_MBRD_inj  :=-4*0.000 ;a3T_MBRD_inj  := 4*0.000 ;
+a4L_MBRD_inj  :=-4*0.000 ;a4T_MBRD_inj  := 4*0.000 ;
+a5L_MBRD_inj  :=-4*0.000 ;a5T_MBRD_inj  := 4*0.000 ;
+a6L_MBRD_inj  :=-4*0.000 ;a6T_MBRD_inj  := 4*0.000 ;
+a7L_MBRD_inj  :=-4*0.000 ;a7T_MBRD_inj  := 4*0.000 ;
+a8L_MBRD_inj  :=-4*0.000 ;a8T_MBRD_inj  := 4*0.000 ;
+a9L_MBRD_inj  :=-4*0.000 ;a9T_MBRD_inj  := 4*0.000 ;
+a10L_MBRD_inj :=-4*0.000 ;a10T_MBRD_inj := 4*0.000 ;
+a11L_MBRD_inj :=-4*0.000 ;a11T_MBRD_inj := 4*0.000 ;
+a12L_MBRD_inj :=-4*0.000 ;a12T_MBRD_inj := 4*0.000 ;
+a13L_MBRD_inj :=-4*0.000 ;a13T_MBRD_inj := 4*0.000 ;
+a14L_MBRD_inj :=-4*0.000 ;a14T_MBRD_inj := 4*0.000 ;
+a15L_MBRD_inj :=-4*0.000 ;a15T_MBRD_inj := 4*0.000 ;
  
 !                bn at col 
 b1M_MBRD_V1_col  :=  0.000 ;b1M_MBRD_V2_col  :=  0.000 ;b1U_MBRD_col  :=  0.000 ;b1R_MBRD_col  :=  0.000 ; 
@@ -53,6 +87,22 @@ b12M_MBRD_V1_col :=  0.000 ;b12M_MBRD_V2_col :=  0.000 ;b12U_MBRD_col :=  0.000 
 b13M_MBRD_V1_col :=  0.000 ;b13M_MBRD_V2_col :=  0.000 ;b13U_MBRD_col :=  0.000 ;b13R_MBRD_col :=  0.000 ; 
 b14M_MBRD_V1_col :=  0.000 ;b14M_MBRD_V2_col :=  0.000 ;b14U_MBRD_col :=  0.000 ;b14R_MBRD_col :=  0.000 ; 
 b15M_MBRD_V1_col :=  0.000 ;b15M_MBRD_V2_col :=  0.000 ;b15U_MBRD_col :=  0.000 ;b15R_MBRD_col :=  0.000 ; 
+
+b1L_MBRD_col  :=-4*0.000 ;b1T_MBRD_col  := 4*0.000 ;
+b2L_MBRD_col  :=-4*0.000 ;b2T_MBRD_col  := 4*0.000 ;
+!b3L_MBRD_col  :=-4*0.000 ;b3T_MBRD_col  := 4*0.000 ;
+b4L_MBRD_col  :=-4*0.000 ;b4T_MBRD_col  := 4*0.000 ;
+b5L_MBRD_col  :=-4*0.000 ;b5T_MBRD_col  := 4*0.000 ;
+b6L_MBRD_col  :=-4*0.000 ;b6T_MBRD_col  := 4*0.000 ;
+b7L_MBRD_col  :=-4*0.000 ;b7T_MBRD_col  := 4*0.000 ;
+b8L_MBRD_col  :=-4*0.000 ;b8T_MBRD_col  := 4*0.000 ;
+b9L_MBRD_col  :=-4*0.000 ;b9T_MBRD_col  := 4*0.000 ;
+b10L_MBRD_col :=-4*0.000 ;b10T_MBRD_col := 4*0.000 ;
+b11L_MBRD_col :=-4*0.000 ;b11T_MBRD_col := 4*0.000 ;
+b12L_MBRD_col :=-4*0.000 ;b12T_MBRD_col := 4*0.000 ;
+b13L_MBRD_col :=-4*0.000 ;b13T_MBRD_col := 4*0.000 ;
+b14L_MBRD_col :=-4*0.000 ;b14T_MBRD_col := 4*0.000 ;
+b15L_MBRD_col :=-4*0.000 ;b15T_MBRD_col := 4*0.000 ;
  
 !                an at col 
 a1M_MBRD_V1_col  :=  0.000 ;a1M_MBRD_V2_col  :=  0.000 ;a1U_MBRD_col  :=  0.000 ;a1R_MBRD_col  :=  0.000 ; 
@@ -70,3 +120,19 @@ a12M_MBRD_V1_col :=  0.000 ;a12M_MBRD_V2_col :=  0.000 ;a12U_MBRD_col :=  0.000 
 a13M_MBRD_V1_col :=  0.000 ;a13M_MBRD_V2_col :=  0.000 ;a13U_MBRD_col :=  0.000 ;a13R_MBRD_col :=  0.000 ; 
 a14M_MBRD_V1_col :=  0.000 ;a14M_MBRD_V2_col :=  0.000 ;a14U_MBRD_col :=  0.000 ;a14R_MBRD_col :=  0.000 ; 
 a15M_MBRD_V1_col :=  0.000 ;a15M_MBRD_V2_col :=  0.000 ;a15U_MBRD_col :=  0.000 ;a15R_MBRD_col :=  0.000 ; 
+
+a1L_MBRD_col  :=-4*0.000 ;a1T_MBRD_col  := 4*0.000 ;
+a2L_MBRD_col  :=-4*0.000 ;a2T_MBRD_col  := 4*0.000 ;
+a3L_MBRD_col  :=-4*0.000 ;a3T_MBRD_col  := 4*0.000 ;
+a4L_MBRD_col  :=-4*0.000 ;a4T_MBRD_col  := 4*0.000 ;
+a5L_MBRD_col  :=-4*0.000 ;a5T_MBRD_col  := 4*0.000 ;
+a6L_MBRD_col  :=-4*0.000 ;a6T_MBRD_col  := 4*0.000 ;
+a7L_MBRD_col  :=-4*0.000 ;a7T_MBRD_col  := 4*0.000 ;
+a8L_MBRD_col  :=-4*0.000 ;a8T_MBRD_col  := 4*0.000 ;
+a9L_MBRD_col  :=-4*0.000 ;a9T_MBRD_col  := 4*0.000 ;
+a10L_MBRD_col :=-4*0.000 ;a10T_MBRD_col := 4*0.000 ;
+a11L_MBRD_col :=-4*0.000 ;a11T_MBRD_col := 4*0.000 ;
+a12L_MBRD_col :=-4*0.000 ;a12T_MBRD_col := 4*0.000 ;
+a13L_MBRD_col :=-4*0.000 ;a13T_MBRD_col := 4*0.000 ;
+a14L_MBRD_col :=-4*0.000 ;a14T_MBRD_col := 4*0.000 ;
+a15L_MBRD_col :=-4*0.000 ;a15T_MBRD_col := 4*0.000 ;

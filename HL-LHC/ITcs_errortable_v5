@@ -1,9 +1,13 @@
 !!! Provided by E. Todesco (version 4 - May 20 2015)
+!!! T Pugnat 2024
+!!! Add extremum for uniform error distribution
 
 ! -----------------------------------------------------------------------
 ! Error type  : M - AVERAGE
 !               R - STANDARD
 !               U - UNCERTAINTY
+!               L - LOWER ESTIMATION FOR UNIFORM DISTRIBUTION
+!               T - UPPER ESTIMATION FOR UNIFORM DISTRIBUTION
 ! -----------------------------------------------------------------------
 
 ! Units : relative field error for Rr = 50 mm in units of 10^-4
@@ -31,6 +35,22 @@ b13M_MQXFcs_inj :=  0.0000 ; b13U_MQXFcs_inj :=  0.0000 ; b13R_MQXFcs_inj :=  0.
 b14M_MQXFcs_inj := -0.5450 ; b14U_MQXFcs_inj :=  0.0000 ; b14R_MQXFcs_inj :=  0.0000 ;
 b15M_MQXFcs_inj :=  0.0000 ; b15U_MQXFcs_inj :=  0.0000 ; b15R_MQXFcs_inj :=  0.0000 ;
 
+b1L_MQXFcs_inj  :=-4*0.0000 ; b1T_MQXFcs_inj  := 4*0.0000 ;
+b2L_MQXFcs_inj  :=-4*0.0000 ; b2T_MQXFcs_inj  := 4*0.0000 ;
+b3L_MQXFcs_inj  :=-4*0.0000 ; b3T_MQXFcs_inj  := 4*0.0000 ;
+b4L_MQXFcs_inj  :=-4*0.0000 ; b4T_MQXFcs_inj  := 4*0.0000 ;
+b5L_MQXFcs_inj  :=-4*0.0000 ; b5T_MQXFcs_inj  := 4*0.0000 ;
+b6L_MQXFcs_inj  :=-4*0.0000 ; b6T_MQXFcs_inj  := 4*0.0000 ;
+b7L_MQXFcs_inj  :=-4*0.0000 ; b7T_MQXFcs_inj  := 4*0.0000 ;
+b8L_MQXFcs_inj  :=-4*0.0000 ; b8T_MQXFcs_inj  := 4*0.0000 ;
+b9L_MQXFcs_inj  :=-4*0.0000 ; b9T_MQXFcs_inj  := 4*0.0000 ;
+b10L_MQXFcs_inj :=-4*0.0000 ; b10T_MQXFcs_inj := 4*0.0000 ;
+b11L_MQXFcs_inj :=-4*0.0000 ; b11T_MQXFcs_inj := 4*0.0000 ;
+b12L_MQXFcs_inj :=-4*0.0000 ; b12T_MQXFcs_inj := 4*0.0000 ;
+b13L_MQXFcs_inj :=-4*0.0000 ; b13T_MQXFcs_inj := 4*0.0000 ;
+b14L_MQXFcs_inj :=-4*0.0000 ; b14T_MQXFcs_inj := 4*0.0000 ;
+b15L_MQXFcs_inj :=-4*0.0000 ; b15T_MQXFcs_inj := 4*0.0000 ;
+
 !                                bn in collision
 b1M_MQXFcs_col  :=  0.0000 ; b1U_MQXFcs_col  :=  0.0000 ; b1R_MQXFcs_col  :=  0.0000 ;
 b2M_MQXFcs_col  :=  0.0000 ; b2U_MQXFcs_col  :=  0.0000 ; b2R_MQXFcs_col  :=  0.0000 ;
@@ -47,6 +67,22 @@ b12M_MQXFcs_col :=  0.0000 ; b12U_MQXFcs_col :=  0.0000 ; b12R_MQXFcs_col :=  0.
 b13M_MQXFcs_col :=  0.0000 ; b13U_MQXFcs_col :=  0.0000 ; b13R_MQXFcs_col :=  0.0000 ;
 b14M_MQXFcs_col := -0.5450 ; b14U_MQXFcs_col :=  0.0000 ; b14R_MQXFcs_col :=  0.0000 ;
 b15M_MQXFcs_col :=  0.0000 ; b15U_MQXFcs_col :=  0.0000 ; b15R_MQXFcs_col :=  0.0000 ;
+
+b1L_MQXFcs_col  :=-4*0.0000 ; b1T_MQXFcs_col  := 4*0.0000 ;
+b2L_MQXFcs_col  :=-4*0.0000 ; b2T_MQXFcs_col  := 4*0.0000 ;
+b3L_MQXFcs_col  :=-4*0.0000 ; b3T_MQXFcs_col  := 4*0.0000 ;
+b4L_MQXFcs_col  :=-4*0.0000 ; b4T_MQXFcs_col  := 4*0.0000 ;
+b5L_MQXFcs_col  :=-4*0.0000 ; b5T_MQXFcs_col  := 4*0.0000 ;
+b6L_MQXFcs_col  :=-4*0.0000 ; b6T_MQXFcs_col  := 4*0.0000 ;
+b7L_MQXFcs_col  :=-4*0.0000 ; b7T_MQXFcs_col  := 4*0.0000 ;
+b8L_MQXFcs_col  :=-4*0.0000 ; b8T_MQXFcs_col  := 4*0.0000 ;
+b9L_MQXFcs_col  :=-4*0.0000 ; b9T_MQXFcs_col  := 4*0.0000 ;
+b10L_MQXFcs_col :=-4*0.0000 ; b10T_MQXFcs_col := 4*0.0000 ;
+b11L_MQXFcs_col :=-4*0.0000 ; b11T_MQXFcs_col := 4*0.0000 ;
+b12L_MQXFcs_col :=-4*0.0000 ; b12T_MQXFcs_col := 4*0.0000 ;
+b13L_MQXFcs_col :=-4*0.0000 ; b13T_MQXFcs_col := 4*0.0000 ;
+b14L_MQXFcs_col :=-4*0.0000 ; b14T_MQXFcs_col := 4*0.0000 ;
+b15L_MQXFcs_col :=-4*0.0000 ; b15T_MQXFcs_col := 4*0.0000 ;
 
 !                               an at injection
 a1M_MQXFcs_inj  :=  0.0000 ; a1U_MQXFcs_inj  :=  0.0000 ; a1R_MQXFcs_inj  :=  0.0000 ;
@@ -65,6 +101,22 @@ a13M_MQXFcs_inj :=  0.0000 ; a13U_MQXFcs_inj :=  0.0000 ; a13R_MQXFcs_inj :=  0.
 a14M_MQXFcs_inj := -0.2220 ; a14U_MQXFcs_inj :=  0.0000 ; a14R_MQXFcs_inj :=  0.0000 ;
 a15M_MQXFcs_inj :=  0.0000 ; a15U_MQXFcs_inj :=  0.0000 ; a15R_MQXFcs_inj :=  0.0000 ;
 
+a1L_MQXFcs_inj  :=-4*0.0000 ; a1T_MQXFcs_inj  := 4*0.0000 ;
+a2L_MQXFcs_inj  :=-4*0.0000 ; a2T_MQXFcs_inj  := 4*0.0000 ;
+a3L_MQXFcs_inj  :=-4*0.0000 ; a3T_MQXFcs_inj  := 4*0.0000 ;
+a4L_MQXFcs_inj  :=-4*0.0000 ; a4T_MQXFcs_inj  := 4*0.0000 ;
+a5L_MQXFcs_inj  :=-4*0.0000 ; a5T_MQXFcs_inj  := 4*0.0000 ;
+a6L_MQXFcs_inj  :=-4*0.0000 ; a6T_MQXFcs_inj  := 4*0.0000 ;
+a7L_MQXFcs_inj  :=-4*0.0000 ; a7T_MQXFcs_inj  := 4*0.0000 ;
+a8L_MQXFcs_inj  :=-4*0.0000 ; a8T_MQXFcs_inj  := 4*0.0000 ;
+a9L_MQXFcs_inj  :=-4*0.0000 ; a9T_MQXFcs_inj  := 4*0.0000 ;
+a10L_MQXFcs_inj :=-4*0.0000 ; a10T_MQXFcs_inj := 4*0.0000 ;
+a11L_MQXFcs_inj :=-4*0.0000 ; a11T_MQXFcs_inj := 4*0.0000 ;
+a12L_MQXFcs_inj :=-4*0.0000 ; a12T_MQXFcs_inj := 4*0.0000 ;
+a13L_MQXFcs_inj :=-4*0.0000 ; a13T_MQXFcs_inj := 4*0.0000 ;
+a14L_MQXFcs_inj :=-4*0.0000 ; a14T_MQXFcs_inj := 4*0.0000 ;
+a15L_MQXFcs_inj :=-4*0.0000 ; a15T_MQXFcs_inj := 4*0.0000 ;
+
 !                               an in collision
 a1M_MQXFcs_col  :=  0.0000 ; a1U_MQXFcs_col  :=  0.0000 ; a1R_MQXFcs_col  :=  0.0000 ;
 a2M_MQXFcs_col  :=-31.3420 ; a2U_MQXFcs_col  :=  0.0000 ; a2R_MQXFcs_col  :=  0.0000 ;
@@ -81,6 +133,22 @@ a12M_MQXFcs_col :=  0.0000 ; a12U_MQXFcs_col :=  0.0000 ; a12R_MQXFcs_col :=  0.
 a13M_MQXFcs_col :=  0.0000 ; a13U_MQXFcs_col :=  0.0000 ; a13R_MQXFcs_col :=  0.0000 ;
 a14M_MQXFcs_col := -0.2220 ; a14U_MQXFcs_col :=  0.0000 ; a14R_MQXFcs_col :=  0.0000 ;
 a15M_MQXFcs_col :=  0.0000 ; a15U_MQXFcs_col :=  0.0000 ; a15R_MQXFcs_col :=  0.0000 ;
+
+a1L_MQXFcs_col  :=-4*0.0000 ; a1T_MQXFcs_col  := 4*0.0000 ;
+a2L_MQXFcs_col  :=-4*0.0000 ; a2T_MQXFcs_col  := 4*0.0000 ;
+a3L_MQXFcs_col  :=-4*0.0000 ; a3T_MQXFcs_col  := 4*0.0000 ;
+a4L_MQXFcs_col  :=-4*0.0000 ; a4T_MQXFcs_col  := 4*0.0000 ;
+a5L_MQXFcs_col  :=-4*0.0000 ; a5T_MQXFcs_col  := 4*0.0000 ;
+a6L_MQXFcs_col  :=-4*0.0000 ; a6T_MQXFcs_col  := 4*0.0000 ;
+a7L_MQXFcs_col  :=-4*0.0000 ; a7T_MQXFcs_col  := 4*0.0000 ;
+a8L_MQXFcs_col  :=-4*0.0000 ; a8T_MQXFcs_col  := 4*0.0000 ;
+a9L_MQXFcs_col  :=-4*0.0000 ; a9T_MQXFcs_col  := 4*0.0000 ;
+a10L_MQXFcs_col :=-4*0.0000 ; a10T_MQXFcs_col := 4*0.0000 ;
+a11L_MQXFcs_col :=-4*0.0000 ; a11T_MQXFcs_col := 4*0.0000 ;
+a12L_MQXFcs_col :=-4*0.0000 ; a12T_MQXFcs_col := 4*0.0000 ;
+a13L_MQXFcs_col :=-4*0.0000 ; a13T_MQXFcs_col := 4*0.0000 ;
+a14L_MQXFcs_col :=-4*0.0000 ; a14T_MQXFcs_col := 4*0.0000 ;
+a15L_MQXFcs_col :=-4*0.0000 ; a15T_MQXFcs_col := 4*0.0000 ;
 
 return;
 
