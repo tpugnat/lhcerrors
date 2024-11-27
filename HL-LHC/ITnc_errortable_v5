@@ -35,21 +35,21 @@ b13M_MQXFnc_inj :=  0.0000 ; b13U_MQXFnc_inj :=  0.0000 ; b13R_MQXFnc_inj :=  0.
 b14M_MQXFnc_inj := -1.0830 ; b14U_MQXFnc_inj :=  0.0000 ; b14R_MQXFnc_inj :=  0.0000 ;
 b15M_MQXFnc_inj :=  0.0000 ; b15U_MQXFnc_inj :=  0.0000 ; b15R_MQXFnc_inj :=  0.0000 ;
 
-b1L_MQXFnc_inj  :=-4*0.0000 ; b1T_MQXFnc_inj  := 4*0.0000 ;
-b2L_MQXFnc_inj  :=-4*0.0000 ; b2T_MQXFnc_inj  := 4*0.0000 ;
-b3L_MQXFnc_inj  :=-4*0.0000 ; b3T_MQXFnc_inj  := 4*0.0000 ;
-b4L_MQXFnc_inj  :=-4*0.0000 ; b4T_MQXFnc_inj  := 4*0.0000 ;
-b5L_MQXFnc_inj  :=-4*0.0000 ; b5T_MQXFnc_inj  := 4*0.0000 ;
-b6L_MQXFnc_inj  :=-4*0.0000 ; b6T_MQXFnc_inj  := 4*0.0000 ;
-b7L_MQXFnc_inj  :=-4*0.0000 ; b7T_MQXFnc_inj  := 4*0.0000 ;
-b8L_MQXFnc_inj  :=-4*0.0000 ; b8T_MQXFnc_inj  := 4*0.0000 ;
-b9L_MQXFnc_inj  :=-4*0.0000 ; b9T_MQXFnc_inj  := 4*0.0000 ;
-b10L_MQXFnc_inj :=-4*0.0000 ; b10T_MQXFnc_inj := 4*0.0000 ;
-b11L_MQXFnc_inj :=-4*0.0000 ; b11T_MQXFnc_inj := 4*0.0000 ;
-b12L_MQXFnc_inj :=-4*0.0000 ; b12T_MQXFnc_inj := 4*0.0000 ;
-b13L_MQXFnc_inj :=-4*0.0000 ; b13T_MQXFnc_inj := 4*0.0000 ;
-b14L_MQXFnc_inj :=-4*0.0000 ; b14T_MQXFnc_inj := 4*0.0000 ;
-b15L_MQXFnc_inj :=-4*0.0000 ; b15T_MQXFnc_inj := 4*0.0000 ;
+b1L_MQXFnc_inj  := 0.0000 ; b1T_MQXFnc_inj  := 0.0000 ;
+b2L_MQXFnc_inj  := 0.0000 ; b2T_MQXFnc_inj  := 0.0000 ;
+b3L_MQXFnc_inj  := 0.0000 ; b3T_MQXFnc_inj  := 0.0000 ;
+b4L_MQXFnc_inj  := 0.0000 ; b4T_MQXFnc_inj  := 0.0000 ;
+b5L_MQXFnc_inj  := 0.0000 ; b5T_MQXFnc_inj  := 0.0000 ;
+b6L_MQXFnc_inj  := 0.0000 ; b6T_MQXFnc_inj  := 0.0000 ;
+b7L_MQXFnc_inj  := 0.0000 ; b7T_MQXFnc_inj  := 0.0000 ;
+b8L_MQXFnc_inj  := 0.0000 ; b8T_MQXFnc_inj  := 0.0000 ;
+b9L_MQXFnc_inj  := 0.0000 ; b9T_MQXFnc_inj  := 0.0000 ;
+b10L_MQXFnc_inj := 0.0000 ; b10T_MQXFnc_inj := 0.0000 ;
+b11L_MQXFnc_inj := 0.0000 ; b11T_MQXFnc_inj := 0.0000 ;
+b12L_MQXFnc_inj := 0.0000 ; b12T_MQXFnc_inj := 0.0000 ;
+b13L_MQXFnc_inj := 0.0000 ; b13T_MQXFnc_inj := 0.0000 ;
+b14L_MQXFnc_inj := 0.0000 ; b14T_MQXFnc_inj := 0.0000 ;
+b15L_MQXFnc_inj := 0.0000 ; b15T_MQXFnc_inj := 0.0000 ;
 
 !                                bn in collision
 b1M_MQXFnc_col  :=  0.0000 ; b1U_MQXFnc_col  :=  0.0000 ; b1R_MQXFnc_col  :=  0.0000 ;
@@ -68,21 +68,21 @@ b13M_MQXFnc_col :=  0.0000 ; b13U_MQXFnc_col :=  0.0000 ; b13R_MQXFnc_col :=  0.
 b14M_MQXFnc_col := -1.0830 ; b14U_MQXFnc_col :=  0.0000 ; b14R_MQXFnc_col :=  0.0000 ;
 b15M_MQXFnc_col :=  0.0000 ; b15U_MQXFnc_col :=  0.0000 ; b15R_MQXFnc_col :=  0.0000 ;
 
-b1L_MQXFnc_col  :=-4*0.0000 ; b1T_MQXFnc_col  := 4*0.0000 ;
-b2L_MQXFnc_col  :=-4*0.0000 ; b2T_MQXFnc_col  := 4*0.0000 ;
-b3L_MQXFnc_col  :=-4*0.0000 ; b3T_MQXFnc_col  := 4*0.0000 ;
-b4L_MQXFnc_col  :=-4*0.0000 ; b4T_MQXFnc_col  := 4*0.0000 ;
-b5L_MQXFnc_col  :=-4*0.0000 ; b5T_MQXFnc_col  := 4*0.0000 ;
-b6L_MQXFnc_col  :=-4*0.0000 ; b6T_MQXFnc_col  := 4*0.0000 ;
-b7L_MQXFnc_col  :=-4*0.0000 ; b7T_MQXFnc_col  := 4*0.0000 ;
-b8L_MQXFnc_col  :=-4*0.0000 ; b8T_MQXFnc_col  := 4*0.0000 ;
-b9L_MQXFnc_col  :=-4*0.0000 ; b9T_MQXFnc_col  := 4*0.0000 ;
-b10L_MQXFnc_col :=-4*0.0000 ; b10T_MQXFnc_col := 4*0.0000 ;
-b11L_MQXFnc_col :=-4*0.0000 ; b11T_MQXFnc_col := 4*0.0000 ;
-b12L_MQXFnc_col :=-4*0.0000 ; b12T_MQXFnc_col := 4*0.0000 ;
-b13L_MQXFnc_col :=-4*0.0000 ; b13T_MQXFnc_col := 4*0.0000 ;
-b14L_MQXFnc_col :=-4*0.0000 ; b14T_MQXFnc_col := 4*0.0000 ;
-b15L_MQXFnc_col :=-4*0.0000 ; b15T_MQXFnc_col := 4*0.0000 ;
+b1L_MQXFnc_col  := 0.0000 ; b1T_MQXFnc_col  := 0.0000 ;
+b2L_MQXFnc_col  := 0.0000 ; b2T_MQXFnc_col  := 0.0000 ;
+b3L_MQXFnc_col  := 0.0000 ; b3T_MQXFnc_col  := 0.0000 ;
+b4L_MQXFnc_col  := 0.0000 ; b4T_MQXFnc_col  := 0.0000 ;
+b5L_MQXFnc_col  := 0.0000 ; b5T_MQXFnc_col  := 0.0000 ;
+b6L_MQXFnc_col  := 0.0000 ; b6T_MQXFnc_col  := 0.0000 ;
+b7L_MQXFnc_col  := 0.0000 ; b7T_MQXFnc_col  := 0.0000 ;
+b8L_MQXFnc_col  := 0.0000 ; b8T_MQXFnc_col  := 0.0000 ;
+b9L_MQXFnc_col  := 0.0000 ; b9T_MQXFnc_col  := 0.0000 ;
+b10L_MQXFnc_col := 0.0000 ; b10T_MQXFnc_col := 0.0000 ;
+b11L_MQXFnc_col := 0.0000 ; b11T_MQXFnc_col := 0.0000 ;
+b12L_MQXFnc_col := 0.0000 ; b12T_MQXFnc_col := 0.0000 ;
+b13L_MQXFnc_col := 0.0000 ; b13T_MQXFnc_col := 0.0000 ;
+b14L_MQXFnc_col := 0.0000 ; b14T_MQXFnc_col := 0.0000 ;
+b15L_MQXFnc_col := 0.0000 ; b15T_MQXFnc_col := 0.0000 ;
 
 !                               an at injection
 a1M_MQXFnc_inj  :=  0.0000 ; a1U_MQXFnc_inj  :=  0.0000 ; a1R_MQXFnc_inj  :=  0.0000 ;
@@ -101,21 +101,21 @@ a13M_MQXFnc_inj :=  0.0000 ; a13U_MQXFnc_inj :=  0.0000 ; a13R_MQXFnc_inj :=  0.
 a14M_MQXFnc_inj :=  0.0000 ; a14U_MQXFnc_inj :=  0.0000 ; a14R_MQXFnc_inj :=  0.0000 ;
 a15M_MQXFnc_inj :=  0.0000 ; a15U_MQXFnc_inj :=  0.0000 ; a15R_MQXFnc_inj :=  0.0000 ;
 
-a1L_MQXFnc_inj  :=-4*0.0000 ; a1T_MQXFnc_inj  := 4*0.0000 ;
-a2L_MQXFnc_inj  :=-4*0.0000 ; a2T_MQXFnc_inj  := 4*0.0000 ;
-a3L_MQXFnc_inj  :=-4*0.0000 ; a3T_MQXFnc_inj  := 4*0.0000 ;
-a4L_MQXFnc_inj  :=-4*0.0000 ; a4T_MQXFnc_inj  := 4*0.0000 ;
-a5L_MQXFnc_inj  :=-4*0.0000 ; a5T_MQXFnc_inj  := 4*0.0000 ;
-a6L_MQXFnc_inj  :=-4*0.0000 ; a6T_MQXFnc_inj  := 4*0.0000 ;
-a7L_MQXFnc_inj  :=-4*0.0000 ; a7T_MQXFnc_inj  := 4*0.0000 ;
-a8L_MQXFnc_inj  :=-4*0.0000 ; a8T_MQXFnc_inj  := 4*0.0000 ;
-a9L_MQXFnc_inj  :=-4*0.0000 ; a9T_MQXFnc_inj  := 4*0.0000 ;
-a10L_MQXFnc_inj :=-4*0.0000 ; a10T_MQXFnc_inj := 4*0.0000 ;
-a11L_MQXFnc_inj :=-4*0.0000 ; a11T_MQXFnc_inj := 4*0.0000 ;
-a12L_MQXFnc_inj :=-4*0.0000 ; a12T_MQXFnc_inj := 4*0.0000 ;
-a13L_MQXFnc_inj :=-4*0.0000 ; a13T_MQXFnc_inj := 4*0.0000 ;
-a14L_MQXFnc_inj :=-4*0.0000 ; a14T_MQXFnc_inj := 4*0.0000 ;
-a15L_MQXFnc_inj :=-4*0.0000 ; a15T_MQXFnc_inj := 4*0.0000 ;
+a1L_MQXFnc_inj  := 0.0000 ; a1T_MQXFnc_inj  := 0.0000 ;
+a2L_MQXFnc_inj  := 0.0000 ; a2T_MQXFnc_inj  := 0.0000 ;
+a3L_MQXFnc_inj  := 0.0000 ; a3T_MQXFnc_inj  := 0.0000 ;
+a4L_MQXFnc_inj  := 0.0000 ; a4T_MQXFnc_inj  := 0.0000 ;
+a5L_MQXFnc_inj  := 0.0000 ; a5T_MQXFnc_inj  := 0.0000 ;
+a6L_MQXFnc_inj  := 0.0000 ; a6T_MQXFnc_inj  := 0.0000 ;
+a7L_MQXFnc_inj  := 0.0000 ; a7T_MQXFnc_inj  := 0.0000 ;
+a8L_MQXFnc_inj  := 0.0000 ; a8T_MQXFnc_inj  := 0.0000 ;
+a9L_MQXFnc_inj  := 0.0000 ; a9T_MQXFnc_inj  := 0.0000 ;
+a10L_MQXFnc_inj := 0.0000 ; a10T_MQXFnc_inj := 0.0000 ;
+a11L_MQXFnc_inj := 0.0000 ; a11T_MQXFnc_inj := 0.0000 ;
+a12L_MQXFnc_inj := 0.0000 ; a12T_MQXFnc_inj := 0.0000 ;
+a13L_MQXFnc_inj := 0.0000 ; a13T_MQXFnc_inj := 0.0000 ;
+a14L_MQXFnc_inj := 0.0000 ; a14T_MQXFnc_inj := 0.0000 ;
+a15L_MQXFnc_inj := 0.0000 ; a15T_MQXFnc_inj := 0.0000 ;
 
 !                               an in collision
 a1M_MQXFnc_col  :=  0.0000 ; a1U_MQXFnc_col  :=  0.0000 ; a1R_MQXFnc_col  :=  0.0000 ;
@@ -134,21 +134,21 @@ a13M_MQXFnc_col :=  0.0000 ; a13U_MQXFnc_col :=  0.0000 ; a13R_MQXFnc_col :=  0.
 a14M_MQXFnc_col :=  0.0000 ; a14U_MQXFnc_col :=  0.0000 ; a14R_MQXFnc_col :=  0.0000 ;
 a15M_MQXFnc_col :=  0.0000 ; a15U_MQXFnc_col :=  0.0000 ; a15R_MQXFnc_col :=  0.0000 ;
 
-a1L_MQXFnc_col  :=-4*0.0000 ; a1T_MQXFnc_col  := 4*0.0000 ;
-a2L_MQXFnc_col  :=-4*0.0000 ; a2T_MQXFnc_col  := 4*0.0000 ;
-a3L_MQXFnc_col  :=-4*0.0000 ; a3T_MQXFnc_col  := 4*0.0000 ;
-a4L_MQXFnc_col  :=-4*0.0000 ; a4T_MQXFnc_col  := 4*0.0000 ;
-a5L_MQXFnc_col  :=-4*0.0000 ; a5T_MQXFnc_col  := 4*0.0000 ;
-a6L_MQXFnc_col  :=-4*0.0000 ; a6T_MQXFnc_col  := 4*0.0000 ;
-a7L_MQXFnc_col  :=-4*0.0000 ; a7T_MQXFnc_col  := 4*0.0000 ;
-a8L_MQXFnc_col  :=-4*0.0000 ; a8T_MQXFnc_col  := 4*0.0000 ;
-a9L_MQXFnc_col  :=-4*0.0000 ; a9T_MQXFnc_col  := 4*0.0000 ;
-a10L_MQXFnc_col :=-4*0.0000 ; a10T_MQXFnc_col := 4*0.0000 ;
-a11L_MQXFnc_col :=-4*0.0000 ; a11T_MQXFnc_col := 4*0.0000 ;
-a12L_MQXFnc_col :=-4*0.0000 ; a12T_MQXFnc_col := 4*0.0000 ;
-a13L_MQXFnc_col :=-4*0.0000 ; a13T_MQXFnc_col := 4*0.0000 ;
-a14L_MQXFnc_col :=-4*0.0000 ; a14T_MQXFnc_col := 4*0.0000 ;
-a15L_MQXFnc_col :=-4*0.0000 ; a15T_MQXFnc_col := 4*0.0000 ;
+a1L_MQXFnc_col  := 0.0000 ; a1T_MQXFnc_col  := 0.0000 ;
+a2L_MQXFnc_col  := 0.0000 ; a2T_MQXFnc_col  := 0.0000 ;
+a3L_MQXFnc_col  := 0.0000 ; a3T_MQXFnc_col  := 0.0000 ;
+a4L_MQXFnc_col  := 0.0000 ; a4T_MQXFnc_col  := 0.0000 ;
+a5L_MQXFnc_col  := 0.0000 ; a5T_MQXFnc_col  := 0.0000 ;
+a6L_MQXFnc_col  := 0.0000 ; a6T_MQXFnc_col  := 0.0000 ;
+a7L_MQXFnc_col  := 0.0000 ; a7T_MQXFnc_col  := 0.0000 ;
+a8L_MQXFnc_col  := 0.0000 ; a8T_MQXFnc_col  := 0.0000 ;
+a9L_MQXFnc_col  := 0.0000 ; a9T_MQXFnc_col  := 0.0000 ;
+a10L_MQXFnc_col := 0.0000 ; a10T_MQXFnc_col := 0.0000 ;
+a11L_MQXFnc_col := 0.0000 ; a11T_MQXFnc_col := 0.0000 ;
+a12L_MQXFnc_col := 0.0000 ; a12T_MQXFnc_col := 0.0000 ;
+a13L_MQXFnc_col := 0.0000 ; a13T_MQXFnc_col := 0.0000 ;
+a14L_MQXFnc_col := 0.0000 ; a14T_MQXFnc_col := 0.0000 ;
+a15L_MQXFnc_col := 0.0000 ; a15T_MQXFnc_col := 0.0000 ;
 
 return;
 
