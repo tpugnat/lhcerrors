@@ -44,6 +44,22 @@ b13M_MQSXF_inj:=0; b13U_MQSXF_inj:=0; b13R_MQSXF_inj:=0;         a13M_MQSXF_inj:
 b14M_MQSXF_inj:=0; b14U_MQSXF_inj:=0; b14R_MQSXF_inj:=0;         a14M_MQSXF_inj:=0; a14U_MQSXF_inj:=0; a14R_MQSXF_inj:=0;
 b15M_MQSXF_inj:=0; b15U_MQSXF_inj:=0; b15R_MQSXF_inj:=0;         a15M_MQSXF_inj:=0; a15U_MQSXF_inj:=0; a15R_MQSXF_inj:=0;
 
+b1L_MQSXF_inj :=0; b1T_MQSXF_inj :=0;          a1L_MQSXF_inj :=0; a1T_MQSXF_inj :=0;
+b2L_MQSXF_inj :=0; b2T_MQSXF_inj :=0;          a2L_MQSXF_inj :=0; a2T_MQSXF_inj :=0;
+b3L_MQSXF_inj :=0; b3T_MQSXF_inj :=0;          a3L_MQSXF_inj :=0; a3T_MQSXF_inj :=0;
+b4L_MQSXF_inj :=0; b4T_MQSXF_inj :=0;          a4L_MQSXF_inj :=0; a4T_MQSXF_inj :=0;
+b5L_MQSXF_inj :=0; b5T_MQSXF_inj :=0;          a5L_MQSXF_inj :=0; a5T_MQSXF_inj :=0;
+b6L_MQSXF_inj :=0; b6T_MQSXF_inj :=0;          a6L_MQSXF_inj :=0; a6T_MQSXF_inj :=0;
+b7L_MQSXF_inj :=0; b7T_MQSXF_inj :=0;          a7L_MQSXF_inj :=0; a7T_MQSXF_inj :=0;
+b8L_MQSXF_inj :=0; b8T_MQSXF_inj :=0;          a8L_MQSXF_inj :=0; a8T_MQSXF_inj :=0;
+b9L_MQSXF_inj :=0; b9T_MQSXF_inj :=0;          a9L_MQSXF_inj :=0; a9T_MQSXF_inj :=0;
+b10L_MQSXF_inj:=0; b10T_MQSXF_inj:=0;          a10L_MQSXF_inj:=0; a10T_MQSXF_inj:=0;
+b11L_MQSXF_inj:=0; b11T_MQSXF_inj:=0;          a11L_MQSXF_inj:=0; a11T_MQSXF_inj:=0;
+b12L_MQSXF_inj:=0; b12T_MQSXF_inj:=0;          a12L_MQSXF_inj:=0; a12T_MQSXF_inj:=0;
+b13L_MQSXF_inj:=0; b13T_MQSXF_inj:=0;          a13L_MQSXF_inj:=0; a13T_MQSXF_inj:=0;
+b14L_MQSXF_inj:=0; b14T_MQSXF_inj:=0;          a14L_MQSXF_inj:=0; a14T_MQSXF_inj:=0;
+b15L_MQSXF_inj:=0; b15T_MQSXF_inj:=0;          a15L_MQSXF_inj:=0; a15T_MQSXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MQSXF_col :=0; b1U_MQSXF_col :=0; b1R_MQSXF_col :=0;         a1M_MQSXF_col :=0; a1U_MQSXF_col :=0; a1R_MQSXF_col :=0;
 b2M_MQSXF_col :=0; b2U_MQSXF_col :=0; b2R_MQSXF_col :=0;         a2M_MQSXF_col :=0; a2U_MQSXF_col :=0; a2R_MQSXF_col :=0;
@@ -60,6 +76,22 @@ b12M_MQSXF_col:=0; b12U_MQSXF_col:=0; b12R_MQSXF_col:=0;         a12M_MQSXF_col:
 b13M_MQSXF_col:=0; b13U_MQSXF_col:=0; b13R_MQSXF_col:=0;         a13M_MQSXF_col:=0; a13U_MQSXF_col:=0; a13R_MQSXF_col:=0;
 b14M_MQSXF_col:=0; b14U_MQSXF_col:=0; b14R_MQSXF_col:=0;         a14M_MQSXF_col:=0; a14U_MQSXF_col:=0; a14R_MQSXF_col:=0;
 b15M_MQSXF_col:=0; b15U_MQSXF_col:=0; b15R_MQSXF_col:=0;         a15M_MQSXF_col:=0; a15U_MQSXF_col:=0; a15R_MQSXF_col:=0;
+
+b1L_MQSXF_col :=0; b1T_MQSXF_col :=0;          a1L_MQSXF_col :=0; a1T_MQSXF_col :=0;
+b2L_MQSXF_col :=0; b2T_MQSXF_col :=0;          a2L_MQSXF_col :=0; a2T_MQSXF_col :=0;
+b3L_MQSXF_col :=0; b3T_MQSXF_col :=0;          a3L_MQSXF_col :=0; a3T_MQSXF_col :=0;
+b4L_MQSXF_col :=0; b4T_MQSXF_col :=0;          a4L_MQSXF_col :=0; a4T_MQSXF_col :=0;
+b5L_MQSXF_col :=0; b5T_MQSXF_col :=0;          a5L_MQSXF_col :=0; a5T_MQSXF_col :=0;
+b6L_MQSXF_col :=0; b6T_MQSXF_col :=0;          a6L_MQSXF_col :=0; a6T_MQSXF_col :=0;
+b7L_MQSXF_col :=0; b7T_MQSXF_col :=0;          a7L_MQSXF_col :=0; a7T_MQSXF_col :=0;
+b8L_MQSXF_col :=0; b8T_MQSXF_col :=0;          a8L_MQSXF_col :=0; a8T_MQSXF_col :=0;
+b9L_MQSXF_col :=0; b9T_MQSXF_col :=0;          a9L_MQSXF_col :=0; a9T_MQSXF_col :=0;
+b10L_MQSXF_col:=0; b10T_MQSXF_col:=0;          a10L_MQSXF_col:=0; a10T_MQSXF_col:=0;
+b11L_MQSXF_col:=0; b11T_MQSXF_col:=0;          a11L_MQSXF_col:=0; a11T_MQSXF_col:=0;
+b12L_MQSXF_col:=0; b12T_MQSXF_col:=0;          a12L_MQSXF_col:=0; a12T_MQSXF_col:=0;
+b13L_MQSXF_col:=0; b13T_MQSXF_col:=0;          a13L_MQSXF_col:=0; a13T_MQSXF_col:=0;
+b14L_MQSXF_col:=0; b14T_MQSXF_col:=0;          a14L_MQSXF_col:=0; a14T_MQSXF_col:=0;
+b15L_MQSXF_col:=0; b15T_MQSXF_col:=0;          a15L_MQSXF_col:=0; a15T_MQSXF_col:=0;
 
 
 
@@ -84,6 +116,22 @@ b13M_MCSXF_inj:=0; b13U_MCSXF_inj:=0; b13R_MCSXF_inj:=0;         a13M_MCSXF_inj:
 b14M_MCSXF_inj:=0; b14U_MCSXF_inj:=0; b14R_MCSXF_inj:=0;         a14M_MCSXF_inj:=0; a14U_MCSXF_inj:=0; a14R_MCSXF_inj:=0;
 b15M_MCSXF_inj:=0; b15U_MCSXF_inj:=0; b15R_MCSXF_inj:=0;         a15M_MCSXF_inj:=0; a15U_MCSXF_inj:=0; a15R_MCSXF_inj:=0;
 
+b1L_MCSXF_inj :=0; b1T_MCSXF_inj :=0;          a1L_MCSXF_inj :=0; a1T_MCSXF_inj :=0;
+b2L_MCSXF_inj :=0; b2T_MCSXF_inj :=0;          a2L_MCSXF_inj :=0; a2T_MCSXF_inj :=0;
+b3L_MCSXF_inj :=0; b3T_MCSXF_inj :=0;          a3L_MCSXF_inj :=0; a3T_MCSXF_inj :=0;
+b4L_MCSXF_inj :=0; b4T_MCSXF_inj :=0;          a4L_MCSXF_inj :=0; a4T_MCSXF_inj :=0;
+b5L_MCSXF_inj :=0; b5T_MCSXF_inj :=0;          a5L_MCSXF_inj :=0; a5T_MCSXF_inj :=0;
+b6L_MCSXF_inj :=0; b6T_MCSXF_inj :=0;          a6L_MCSXF_inj :=0; a6T_MCSXF_inj :=0;
+b7L_MCSXF_inj :=0; b7T_MCSXF_inj :=0;          a7L_MCSXF_inj :=0; a7T_MCSXF_inj :=0;
+b8L_MCSXF_inj :=0; b8T_MCSXF_inj :=0;          a8L_MCSXF_inj :=0; a8T_MCSXF_inj :=0;
+b9L_MCSXF_inj :=0; b9T_MCSXF_inj :=0;          a9L_MCSXF_inj :=0; a9T_MCSXF_inj :=0;
+b10L_MCSXF_inj:=0; b10T_MCSXF_inj:=0;          a10L_MCSXF_inj:=0; a10T_MCSXF_inj:=0;
+b11L_MCSXF_inj:=0; b11T_MCSXF_inj:=0;          a11L_MCSXF_inj:=0; a11T_MCSXF_inj:=0;
+b12L_MCSXF_inj:=0; b12T_MCSXF_inj:=0;          a12L_MCSXF_inj:=0; a12T_MCSXF_inj:=0;
+b13L_MCSXF_inj:=0; b13T_MCSXF_inj:=0;          a13L_MCSXF_inj:=0; a13T_MCSXF_inj:=0;
+b14L_MCSXF_inj:=0; b14T_MCSXF_inj:=0;          a14L_MCSXF_inj:=0; a14T_MCSXF_inj:=0;
+b15L_MCSXF_inj:=0; b15T_MCSXF_inj:=0;          a15L_MCSXF_inj:=0; a15T_MCSXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCSXF_col :=0; b1U_MCSXF_col :=0; b1R_MCSXF_col :=0;         a1M_MCSXF_col :=0; a1U_MCSXF_col :=0; a1R_MCSXF_col :=0;
 b2M_MCSXF_col :=0; b2U_MCSXF_col :=0; b2R_MCSXF_col :=0;         a2M_MCSXF_col :=0; a2U_MCSXF_col :=0; a2R_MCSXF_col :=0;
@@ -101,6 +149,21 @@ b13M_MCSXF_col:=0; b13U_MCSXF_col:=0; b13R_MCSXF_col:=0;         a13M_MCSXF_col:
 b14M_MCSXF_col:=0; b14U_MCSXF_col:=0; b14R_MCSXF_col:=0;         a14M_MCSXF_col:=0; a14U_MCSXF_col:=0; a14R_MCSXF_col:=0;
 b15M_MCSXF_col:=0; b15U_MCSXF_col:=0; b15R_MCSXF_col:=0;         a15M_MCSXF_col:=0; a15U_MCSXF_col:=0; a15R_MCSXF_col:=0;
 
+b1L_MCSXF_col :=0; b1T_MCSXF_col :=0;          a1L_MCSXF_col :=0; a1T_MCSXF_col :=0;
+b2L_MCSXF_col :=0; b2T_MCSXF_col :=0;          a2L_MCSXF_col :=0; a2T_MCSXF_col :=0;
+b3L_MCSXF_col :=0; b3T_MCSXF_col :=0;          a3L_MCSXF_col :=0; a3T_MCSXF_col :=0;
+b4L_MCSXF_col :=0; b4T_MCSXF_col :=0;          a4L_MCSXF_col :=0; a4T_MCSXF_col :=0;
+b5L_MCSXF_col :=0; b5T_MCSXF_col :=0;          a5L_MCSXF_col :=0; a5T_MCSXF_col :=0;
+b6L_MCSXF_col :=0; b6T_MCSXF_col :=0;          a6L_MCSXF_col :=0; a6T_MCSXF_col :=0;
+b7L_MCSXF_col :=0; b7T_MCSXF_col :=0;          a7L_MCSXF_col :=0; a7T_MCSXF_col :=0;
+b8L_MCSXF_col :=0; b8T_MCSXF_col :=0;          a8L_MCSXF_col :=0; a8T_MCSXF_col :=0;
+b9L_MCSXF_col :=0; b9T_MCSXF_col :=0;          a9L_MCSXF_col :=0; a9T_MCSXF_col :=0;
+b10L_MCSXF_col:=0; b10T_MCSXF_col:=0;          a10L_MCSXF_col:=0; a10T_MCSXF_col:=0;
+b11L_MCSXF_col:=0; b11T_MCSXF_col:=0;          a11L_MCSXF_col:=0; a11T_MCSXF_col:=0;
+b12L_MCSXF_col:=0; b12T_MCSXF_col:=0;          a12L_MCSXF_col:=0; a12T_MCSXF_col:=0;
+b13L_MCSXF_col:=0; b13T_MCSXF_col:=0;          a13L_MCSXF_col:=0; a13T_MCSXF_col:=0;
+b14L_MCSXF_col:=0; b14T_MCSXF_col:=0;          a14L_MCSXF_col:=0; a14T_MCSXF_col:=0;
+b15L_MCSXF_col:=0; b15T_MCSXF_col:=0;          a15L_MCSXF_col:=0; a15T_MCSXF_col:=0;
 
 
 ! -----------------------------------------------------------------------
@@ -124,6 +187,22 @@ b13M_MCSSXF_inj:=0; b13U_MCSSXF_inj:=0; b13R_MCSSXF_inj:=0;         a13M_MCSSXF_
 b14M_MCSSXF_inj:=0; b14U_MCSSXF_inj:=0; b14R_MCSSXF_inj:=0;         a14M_MCSSXF_inj:=0; a14U_MCSSXF_inj:=0; a14R_MCSSXF_inj:=0;
 b15M_MCSSXF_inj:=0; b15U_MCSSXF_inj:=0; b15R_MCSSXF_inj:=0;         a15M_MCSSXF_inj:=0; a15U_MCSSXF_inj:=0; a15R_MCSSXF_inj:=0;
 
+b1L_MCSSXF_inj :=0; b1T_MCSSXF_inj :=0;          a1L_MCSSXF_inj :=0; a1T_MCSSXF_inj :=0;
+b2L_MCSSXF_inj :=0; b2T_MCSSXF_inj :=0;          a2L_MCSSXF_inj :=0; a2T_MCSSXF_inj :=0;
+b3L_MCSSXF_inj :=0; b3T_MCSSXF_inj :=0;          a3L_MCSSXF_inj :=0; a3T_MCSSXF_inj :=0;
+b4L_MCSSXF_inj :=0; b4T_MCSSXF_inj :=0;          a4L_MCSSXF_inj :=0; a4T_MCSSXF_inj :=0;
+b5L_MCSSXF_inj :=0; b5T_MCSSXF_inj :=0;          a5L_MCSSXF_inj :=0; a5T_MCSSXF_inj :=0;
+b6L_MCSSXF_inj :=0; b6T_MCSSXF_inj :=0;          a6L_MCSSXF_inj :=0; a6T_MCSSXF_inj :=0;
+b7L_MCSSXF_inj :=0; b7T_MCSSXF_inj :=0;          a7L_MCSSXF_inj :=0; a7T_MCSSXF_inj :=0;
+b8L_MCSSXF_inj :=0; b8T_MCSSXF_inj :=0;          a8L_MCSSXF_inj :=0; a8T_MCSSXF_inj :=0;
+b9L_MCSSXF_inj :=0; b9T_MCSSXF_inj :=0;          a9L_MCSSXF_inj :=0; a9T_MCSSXF_inj :=0;
+b10L_MCSSXF_inj:=0; b10T_MCSSXF_inj:=0;          a10L_MCSSXF_inj:=0; a10T_MCSSXF_inj:=0;
+b11L_MCSSXF_inj:=0; b11T_MCSSXF_inj:=0;          a11L_MCSSXF_inj:=0; a11T_MCSSXF_inj:=0;
+b12L_MCSSXF_inj:=0; b12T_MCSSXF_inj:=0;          a12L_MCSSXF_inj:=0; a12T_MCSSXF_inj:=0;
+b13L_MCSSXF_inj:=0; b13T_MCSSXF_inj:=0;          a13L_MCSSXF_inj:=0; a13T_MCSSXF_inj:=0;
+b14L_MCSSXF_inj:=0; b14T_MCSSXF_inj:=0;          a14L_MCSSXF_inj:=0; a14T_MCSSXF_inj:=0;
+b15L_MCSSXF_inj:=0; b15T_MCSSXF_inj:=0;          a15L_MCSSXF_inj:=0; a15T_MCSSXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCSSXF_col :=0; b1U_MCSSXF_col :=0; b1R_MCSSXF_col :=0;         a1M_MCSSXF_col :=0; a1U_MCSSXF_col :=0; a1R_MCSSXF_col :=0;
 b2M_MCSSXF_col :=0; b2U_MCSSXF_col :=0; b2R_MCSSXF_col :=0;         a2M_MCSSXF_col :=0; a2U_MCSSXF_col :=0; a2R_MCSSXF_col :=0;
@@ -141,6 +220,21 @@ b13M_MCSSXF_col:=0; b13U_MCSSXF_col:=0; b13R_MCSSXF_col:=0;         a13M_MCSSXF_
 b14M_MCSSXF_col:=0; b14U_MCSSXF_col:=0; b14R_MCSSXF_col:=0;         a14M_MCSSXF_col:=0; a14U_MCSSXF_col:=0; a14R_MCSSXF_col:=0;
 b15M_MCSSXF_col:=0; b15U_MCSSXF_col:=0; b15R_MCSSXF_col:=0;         a15M_MCSSXF_col:=0; a15U_MCSSXF_col:=0; a15R_MCSSXF_col:=0;
 
+b1L_MCSSXF_col :=0; b1T_MCSSXF_col :=0;          a1L_MCSSXF_col :=0; a1T_MCSSXF_col :=0;
+b2L_MCSSXF_col :=0; b2T_MCSSXF_col :=0;          a2L_MCSSXF_col :=0; a2T_MCSSXF_col :=0;
+b3L_MCSSXF_col :=0; b3T_MCSSXF_col :=0;          a3L_MCSSXF_col :=0; a3T_MCSSXF_col :=0;
+b4L_MCSSXF_col :=0; b4T_MCSSXF_col :=0;          a4L_MCSSXF_col :=0; a4T_MCSSXF_col :=0;
+b5L_MCSSXF_col :=0; b5T_MCSSXF_col :=0;          a5L_MCSSXF_col :=0; a5T_MCSSXF_col :=0;
+b6L_MCSSXF_col :=0; b6T_MCSSXF_col :=0;          a6L_MCSSXF_col :=0; a6T_MCSSXF_col :=0;
+b7L_MCSSXF_col :=0; b7T_MCSSXF_col :=0;          a7L_MCSSXF_col :=0; a7T_MCSSXF_col :=0;
+b8L_MCSSXF_col :=0; b8T_MCSSXF_col :=0;          a8L_MCSSXF_col :=0; a8T_MCSSXF_col :=0;
+b9L_MCSSXF_col :=0; b9T_MCSSXF_col :=0;          a9L_MCSSXF_col :=0; a9T_MCSSXF_col :=0;
+b10L_MCSSXF_col:=0; b10T_MCSSXF_col:=0;          a10L_MCSSXF_col:=0; a10T_MCSSXF_col:=0;
+b11L_MCSSXF_col:=0; b11T_MCSSXF_col:=0;          a11L_MCSSXF_col:=0; a11T_MCSSXF_col:=0;
+b12L_MCSSXF_col:=0; b12T_MCSSXF_col:=0;          a12L_MCSSXF_col:=0; a12T_MCSSXF_col:=0;
+b13L_MCSSXF_col:=0; b13T_MCSSXF_col:=0;          a13L_MCSSXF_col:=0; a13T_MCSSXF_col:=0;
+b14L_MCSSXF_col:=0; b14T_MCSSXF_col:=0;          a14L_MCSSXF_col:=0; a14T_MCSSXF_col:=0;
+b15L_MCSSXF_col:=0; b15T_MCSSXF_col:=0;          a15L_MCSSXF_col:=0; a15T_MCSSXF_col:=0;
 
 
 ! -----------------------------------------------------------------------
@@ -164,6 +258,22 @@ b13M_MCOXF_inj:=0; b13U_MCOXF_inj:=0; b13R_MCOXF_inj:=0;         a13M_MCOXF_inj:
 b14M_MCOXF_inj:=0; b14U_MCOXF_inj:=0; b14R_MCOXF_inj:=0;         a14M_MCOXF_inj:=0; a14U_MCOXF_inj:=0; a14R_MCOXF_inj:=0;
 b15M_MCOXF_inj:=0; b15U_MCOXF_inj:=0; b15R_MCOXF_inj:=0;         a15M_MCOXF_inj:=0; a15U_MCOXF_inj:=0; a15R_MCOXF_inj:=0;
 
+b1L_MCOXF_inj :=0; b1T_MCOXF_inj :=0;          a1L_MCOXF_inj :=0; a1T_MCOXF_inj :=0;
+b2L_MCOXF_inj :=0; b2T_MCOXF_inj :=0;          a2L_MCOXF_inj :=0; a2T_MCOXF_inj :=0;
+b3L_MCOXF_inj :=0; b3T_MCOXF_inj :=0;          a3L_MCOXF_inj :=0; a3T_MCOXF_inj :=0;
+b4L_MCOXF_inj :=0; b4T_MCOXF_inj :=0;          a4L_MCOXF_inj :=0; a4T_MCOXF_inj :=0;
+b5L_MCOXF_inj :=0; b5T_MCOXF_inj :=0;          a5L_MCOXF_inj :=0; a5T_MCOXF_inj :=0;
+b6L_MCOXF_inj :=0; b6T_MCOXF_inj :=0;          a6L_MCOXF_inj :=0; a6T_MCOXF_inj :=0;
+b7L_MCOXF_inj :=0; b7T_MCOXF_inj :=0;          a7L_MCOXF_inj :=0; a7T_MCOXF_inj :=0;
+b8L_MCOXF_inj :=0; b8T_MCOXF_inj :=0;          a8L_MCOXF_inj :=0; a8T_MCOXF_inj :=0;
+b9L_MCOXF_inj :=0; b9T_MCOXF_inj :=0;          a9L_MCOXF_inj :=0; a9T_MCOXF_inj :=0;
+b10L_MCOXF_inj:=0; b10T_MCOXF_inj:=0;          a10L_MCOXF_inj:=0; a10T_MCOXF_inj:=0;
+b11L_MCOXF_inj:=0; b11T_MCOXF_inj:=0;          a11L_MCOXF_inj:=0; a11T_MCOXF_inj:=0;
+b12L_MCOXF_inj:=0; b12T_MCOXF_inj:=0;          a12L_MCOXF_inj:=0; a12T_MCOXF_inj:=0;
+b13L_MCOXF_inj:=0; b13T_MCOXF_inj:=0;          a13L_MCOXF_inj:=0; a13T_MCOXF_inj:=0;
+b14L_MCOXF_inj:=0; b14T_MCOXF_inj:=0;          a14L_MCOXF_inj:=0; a14T_MCOXF_inj:=0;
+b15L_MCOXF_inj:=0; b15T_MCOXF_inj:=0;          a15L_MCOXF_inj:=0; a15T_MCOXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCOXF_col :=0; b1U_MCOXF_col :=0; b1R_MCOXF_col :=0;         a1M_MCOXF_col :=0; a1U_MCOXF_col :=0; a1R_MCOXF_col :=0;
 b2M_MCOXF_col :=0; b2U_MCOXF_col :=0; b2R_MCOXF_col :=0;         a2M_MCOXF_col :=0; a2U_MCOXF_col :=0; a2R_MCOXF_col :=0;
@@ -180,6 +290,22 @@ b12M_MCOXF_col:=0; b12U_MCOXF_col:=0; b12R_MCOXF_col:=0;         a12M_MCOXF_col:
 b13M_MCOXF_col:=0; b13U_MCOXF_col:=0; b13R_MCOXF_col:=0;         a13M_MCOXF_col:=0; a13U_MCOXF_col:=0; a13R_MCOXF_col:=0;
 b14M_MCOXF_col:=0; b14U_MCOXF_col:=0; b14R_MCOXF_col:=0;         a14M_MCOXF_col:=0; a14U_MCOXF_col:=0; a14R_MCOXF_col:=0;
 b15M_MCOXF_col:=0; b15U_MCOXF_col:=0; b15R_MCOXF_col:=0;         a15M_MCOXF_col:=0; a15U_MCOXF_col:=0; a15R_MCOXF_col:=0;
+
+b1L_MCOXF_col :=0; b1T_MCOXF_col :=0;          a1L_MCOXF_col :=0; a1T_MCOXF_col :=0;
+b2L_MCOXF_col :=0; b2T_MCOXF_col :=0;          a2L_MCOXF_col :=0; a2T_MCOXF_col :=0;
+b3L_MCOXF_col :=0; b3T_MCOXF_col :=0;          a3L_MCOXF_col :=0; a3T_MCOXF_col :=0;
+b4L_MCOXF_col :=0; b4T_MCOXF_col :=0;          a4L_MCOXF_col :=0; a4T_MCOXF_col :=0;
+b5L_MCOXF_col :=0; b5T_MCOXF_col :=0;          a5L_MCOXF_col :=0; a5T_MCOXF_col :=0;
+b6L_MCOXF_col :=0; b6T_MCOXF_col :=0;          a6L_MCOXF_col :=0; a6T_MCOXF_col :=0;
+b7L_MCOXF_col :=0; b7T_MCOXF_col :=0;          a7L_MCOXF_col :=0; a7T_MCOXF_col :=0;
+b8L_MCOXF_col :=0; b8T_MCOXF_col :=0;          a8L_MCOXF_col :=0; a8T_MCOXF_col :=0;
+b9L_MCOXF_col :=0; b9T_MCOXF_col :=0;          a9L_MCOXF_col :=0; a9T_MCOXF_col :=0;
+b10L_MCOXF_col:=0; b10T_MCOXF_col:=0;          a10L_MCOXF_col:=0; a10T_MCOXF_col:=0;
+b11L_MCOXF_col:=0; b11T_MCOXF_col:=0;          a11L_MCOXF_col:=0; a11T_MCOXF_col:=0;
+b12L_MCOXF_col:=0; b12T_MCOXF_col:=0;          a12L_MCOXF_col:=0; a12T_MCOXF_col:=0;
+b13L_MCOXF_col:=0; b13T_MCOXF_col:=0;          a13L_MCOXF_col:=0; a13T_MCOXF_col:=0;
+b14L_MCOXF_col:=0; b14T_MCOXF_col:=0;          a14L_MCOXF_col:=0; a14T_MCOXF_col:=0;
+b15L_MCOXF_col:=0; b15T_MCOXF_col:=0;          a15L_MCOXF_col:=0; a15T_MCOXF_col:=0;
 
 
 
@@ -204,6 +330,22 @@ b13M_MCOSXF_inj:=0; b13U_MCOSXF_inj:=0; b13R_MCOSXF_inj:=0;         a13M_MCOSXF_
 b14M_MCOSXF_inj:=0; b14U_MCOSXF_inj:=0; b14R_MCOSXF_inj:=0;         a14M_MCOSXF_inj:=0; a14U_MCOSXF_inj:=0; a14R_MCOSXF_inj:=0;
 b15M_MCOSXF_inj:=0; b15U_MCOSXF_inj:=0; b15R_MCOSXF_inj:=0;         a15M_MCOSXF_inj:=0; a15U_MCOSXF_inj:=0; a15R_MCOSXF_inj:=0;
 
+b1L_MCOSXF_inj :=0; b1T_MCOSXF_inj :=0;          a1L_MCOSXF_inj :=0; a1T_MCOSXF_inj :=0;
+b2L_MCOSXF_inj :=0; b2T_MCOSXF_inj :=0;          a2L_MCOSXF_inj :=0; a2T_MCOSXF_inj :=0;
+b3L_MCOSXF_inj :=0; b3T_MCOSXF_inj :=0;          a3L_MCOSXF_inj :=0; a3T_MCOSXF_inj :=0;
+b4L_MCOSXF_inj :=0; b4T_MCOSXF_inj :=0;          a4L_MCOSXF_inj :=0; a4T_MCOSXF_inj :=0;
+b5L_MCOSXF_inj :=0; b5T_MCOSXF_inj :=0;          a5L_MCOSXF_inj :=0; a5T_MCOSXF_inj :=0;
+b6L_MCOSXF_inj :=0; b6T_MCOSXF_inj :=0;          a6L_MCOSXF_inj :=0; a6T_MCOSXF_inj :=0;
+b7L_MCOSXF_inj :=0; b7T_MCOSXF_inj :=0;          a7L_MCOSXF_inj :=0; a7T_MCOSXF_inj :=0;
+b8L_MCOSXF_inj :=0; b8T_MCOSXF_inj :=0;          a8L_MCOSXF_inj :=0; a8T_MCOSXF_inj :=0;
+b9L_MCOSXF_inj :=0; b9T_MCOSXF_inj :=0;          a9L_MCOSXF_inj :=0; a9T_MCOSXF_inj :=0;
+b10L_MCOSXF_inj:=0; b10T_MCOSXF_inj:=0;          a10L_MCOSXF_inj:=0; a10T_MCOSXF_inj:=0;
+b11L_MCOSXF_inj:=0; b11T_MCOSXF_inj:=0;          a11L_MCOSXF_inj:=0; a11T_MCOSXF_inj:=0;
+b12L_MCOSXF_inj:=0; b12T_MCOSXF_inj:=0;          a12L_MCOSXF_inj:=0; a12T_MCOSXF_inj:=0;
+b13L_MCOSXF_inj:=0; b13T_MCOSXF_inj:=0;          a13L_MCOSXF_inj:=0; a13T_MCOSXF_inj:=0;
+b14L_MCOSXF_inj:=0; b14T_MCOSXF_inj:=0;          a14L_MCOSXF_inj:=0; a14T_MCOSXF_inj:=0;
+b15L_MCOSXF_inj:=0; b15T_MCOSXF_inj:=0;          a15L_MCOSXF_inj:=0; a15T_MCOSXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCOSXF_col :=0; b1U_MCOSXF_col :=0; b1R_MCOSXF_col :=0;         a1M_MCOSXF_col :=0; a1U_MCOSXF_col :=0; a1R_MCOSXF_col :=0;
 b2M_MCOSXF_col :=0; b2U_MCOSXF_col :=0; b2R_MCOSXF_col :=0;         a2M_MCOSXF_col :=0; a2U_MCOSXF_col :=0; a2R_MCOSXF_col :=0;
@@ -220,6 +362,22 @@ b12M_MCOSXF_col:=0; b12U_MCOSXF_col:=0; b12R_MCOSXF_col:=0;         a12M_MCOSXF_
 b13M_MCOSXF_col:=0; b13U_MCOSXF_col:=0; b13R_MCOSXF_col:=0;         a13M_MCOSXF_col:=0; a13U_MCOSXF_col:=0; a13R_MCOSXF_col:=0;
 b14M_MCOSXF_col:=0; b14U_MCOSXF_col:=0; b14R_MCOSXF_col:=0;         a14M_MCOSXF_col:=0; a14U_MCOSXF_col:=0; a14R_MCOSXF_col:=0;
 b15M_MCOSXF_col:=0; b15U_MCOSXF_col:=0; b15R_MCOSXF_col:=0;         a15M_MCOSXF_col:=0; a15U_MCOSXF_col:=0; a15R_MCOSXF_col:=0;
+
+b1L_MCOSXF_col :=0; b1T_MCOSXF_col :=0;          a1L_MCOSXF_col :=0; a1T_MCOSXF_col :=0;
+b2L_MCOSXF_col :=0; b2T_MCOSXF_col :=0;          a2L_MCOSXF_col :=0; a2T_MCOSXF_col :=0;
+b3L_MCOSXF_col :=0; b3T_MCOSXF_col :=0;          a3L_MCOSXF_col :=0; a3T_MCOSXF_col :=0;
+b4L_MCOSXF_col :=0; b4T_MCOSXF_col :=0;          a4L_MCOSXF_col :=0; a4T_MCOSXF_col :=0;
+b5L_MCOSXF_col :=0; b5T_MCOSXF_col :=0;          a5L_MCOSXF_col :=0; a5T_MCOSXF_col :=0;
+b6L_MCOSXF_col :=0; b6T_MCOSXF_col :=0;          a6L_MCOSXF_col :=0; a6T_MCOSXF_col :=0;
+b7L_MCOSXF_col :=0; b7T_MCOSXF_col :=0;          a7L_MCOSXF_col :=0; a7T_MCOSXF_col :=0;
+b8L_MCOSXF_col :=0; b8T_MCOSXF_col :=0;          a8L_MCOSXF_col :=0; a8T_MCOSXF_col :=0;
+b9L_MCOSXF_col :=0; b9T_MCOSXF_col :=0;          a9L_MCOSXF_col :=0; a9T_MCOSXF_col :=0;
+b10L_MCOSXF_col:=0; b10T_MCOSXF_col:=0;          a10L_MCOSXF_col:=0; a10T_MCOSXF_col:=0;
+b11L_MCOSXF_col:=0; b11T_MCOSXF_col:=0;          a11L_MCOSXF_col:=0; a11T_MCOSXF_col:=0;
+b12L_MCOSXF_col:=0; b12T_MCOSXF_col:=0;          a12L_MCOSXF_col:=0; a12T_MCOSXF_col:=0;
+b13L_MCOSXF_col:=0; b13T_MCOSXF_col:=0;          a13L_MCOSXF_col:=0; a13T_MCOSXF_col:=0;
+b14L_MCOSXF_col:=0; b14T_MCOSXF_col:=0;          a14L_MCOSXF_col:=0; a14T_MCOSXF_col:=0;
+b15L_MCOSXF_col:=0; b15T_MCOSXF_col:=0;          a15L_MCOSXF_col:=0; a15T_MCOSXF_col:=0;
 
 
 
@@ -244,6 +402,22 @@ b13M_MCDXF_inj:=0; b13U_MCDXF_inj:=0; b13R_MCDXF_inj:=0;         a13M_MCDXF_inj:
 b14M_MCDXF_inj:=0; b14U_MCDXF_inj:=0; b14R_MCDXF_inj:=0;         a14M_MCDXF_inj:=0; a14U_MCDXF_inj:=0; a14R_MCDXF_inj:=0;
 b15M_MCDXF_inj:=0; b15U_MCDXF_inj:=0; b15R_MCDXF_inj:=0;         a15M_MCDXF_inj:=0; a15U_MCDXF_inj:=0; a15R_MCDXF_inj:=0;
 
+b1L_MCDXF_inj :=0; b1T_MCDXF_inj :=0;          a1L_MCDXF_inj :=0; a1T_MCDXF_inj :=0;
+b2L_MCDXF_inj :=0; b2T_MCDXF_inj :=0;          a2L_MCDXF_inj :=0; a2T_MCDXF_inj :=0;
+b3L_MCDXF_inj :=0; b3T_MCDXF_inj :=0;          a3L_MCDXF_inj :=0; a3T_MCDXF_inj :=0;
+b4L_MCDXF_inj :=0; b4T_MCDXF_inj :=0;          a4L_MCDXF_inj :=0; a4T_MCDXF_inj :=0;
+b5L_MCDXF_inj :=0; b5T_MCDXF_inj :=0;          a5L_MCDXF_inj :=0; a5T_MCDXF_inj :=0;
+b6L_MCDXF_inj :=0; b6T_MCDXF_inj :=0;          a6L_MCDXF_inj :=0; a6T_MCDXF_inj :=0;
+b7L_MCDXF_inj :=0; b7T_MCDXF_inj :=0;          a7L_MCDXF_inj :=0; a7T_MCDXF_inj :=0;
+b8L_MCDXF_inj :=0; b8T_MCDXF_inj :=0;          a8L_MCDXF_inj :=0; a8T_MCDXF_inj :=0;
+b9L_MCDXF_inj :=0; b9T_MCDXF_inj :=0;          a9L_MCDXF_inj :=0; a9T_MCDXF_inj :=0;
+b10L_MCDXF_inj:=0; b10T_MCDXF_inj:=0;          a10L_MCDXF_inj:=0; a10T_MCDXF_inj:=0;
+b11L_MCDXF_inj:=0; b11T_MCDXF_inj:=0;          a11L_MCDXF_inj:=0; a11T_MCDXF_inj:=0;
+b12L_MCDXF_inj:=0; b12T_MCDXF_inj:=0;          a12L_MCDXF_inj:=0; a12T_MCDXF_inj:=0;
+b13L_MCDXF_inj:=0; b13T_MCDXF_inj:=0;          a13L_MCDXF_inj:=0; a13T_MCDXF_inj:=0;
+b14L_MCDXF_inj:=0; b14T_MCDXF_inj:=0;          a14L_MCDXF_inj:=0; a14T_MCDXF_inj:=0;
+b15L_MCDXF_inj:=0; b15T_MCDXF_inj:=0;          a15L_MCDXF_inj:=0; a15T_MCDXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCDXF_col :=0; b1U_MCDXF_col :=0; b1R_MCDXF_col :=0;         a1M_MCDXF_col :=0; a1U_MCDXF_col :=0; a1R_MCDXF_col :=0;
 b2M_MCDXF_col :=0; b2U_MCDXF_col :=0; b2R_MCDXF_col :=0;         a2M_MCDXF_col :=0; a2U_MCDXF_col :=0; a2R_MCDXF_col :=0;
@@ -260,6 +434,22 @@ b12M_MCDXF_col:=0; b12U_MCDXF_col:=0; b12R_MCDXF_col:=0;         a12M_MCDXF_col:
 b13M_MCDXF_col:=0; b13U_MCDXF_col:=0; b13R_MCDXF_col:=0;         a13M_MCDXF_col:=0; a13U_MCDXF_col:=0; a13R_MCDXF_col:=0;
 b14M_MCDXF_col:=0; b14U_MCDXF_col:=0; b14R_MCDXF_col:=0;         a14M_MCDXF_col:=0; a14U_MCDXF_col:=0; a14R_MCDXF_col:=0;
 b15M_MCDXF_col:=0; b15U_MCDXF_col:=0; b15R_MCDXF_col:=0;         a15M_MCDXF_col:=0; a15U_MCDXF_col:=0; a15R_MCDXF_col:=0;
+
+b1L_MCDXF_col :=0; b1T_MCDXF_col :=0;          a1L_MCDXF_col :=0; a1T_MCDXF_col :=0;
+b2L_MCDXF_col :=0; b2T_MCDXF_col :=0;          a2L_MCDXF_col :=0; a2T_MCDXF_col :=0;
+b3L_MCDXF_col :=0; b3T_MCDXF_col :=0;          a3L_MCDXF_col :=0; a3T_MCDXF_col :=0;
+b4L_MCDXF_col :=0; b4T_MCDXF_col :=0;          a4L_MCDXF_col :=0; a4T_MCDXF_col :=0;
+b5L_MCDXF_col :=0; b5T_MCDXF_col :=0;          a5L_MCDXF_col :=0; a5T_MCDXF_col :=0;
+b6L_MCDXF_col :=0; b6T_MCDXF_col :=0;          a6L_MCDXF_col :=0; a6T_MCDXF_col :=0;
+b7L_MCDXF_col :=0; b7T_MCDXF_col :=0;          a7L_MCDXF_col :=0; a7T_MCDXF_col :=0;
+b8L_MCDXF_col :=0; b8T_MCDXF_col :=0;          a8L_MCDXF_col :=0; a8T_MCDXF_col :=0;
+b9L_MCDXF_col :=0; b9T_MCDXF_col :=0;          a9L_MCDXF_col :=0; a9T_MCDXF_col :=0;
+b10L_MCDXF_col:=0; b10T_MCDXF_col:=0;          a10L_MCDXF_col:=0; a10T_MCDXF_col:=0;
+b11L_MCDXF_col:=0; b11T_MCDXF_col:=0;          a11L_MCDXF_col:=0; a11T_MCDXF_col:=0;
+b12L_MCDXF_col:=0; b12T_MCDXF_col:=0;          a12L_MCDXF_col:=0; a12T_MCDXF_col:=0;
+b13L_MCDXF_col:=0; b13T_MCDXF_col:=0;          a13L_MCDXF_col:=0; a13T_MCDXF_col:=0;
+b14L_MCDXF_col:=0; b14T_MCDXF_col:=0;          a14L_MCDXF_col:=0; a14T_MCDXF_col:=0;
+b15L_MCDXF_col:=0; b15T_MCDXF_col:=0;          a15L_MCDXF_col:=0; a15T_MCDXF_col:=0;
 
 
 
@@ -284,6 +474,22 @@ b13M_MCDSXF_inj:=0; b13U_MCDSXF_inj:=0; b13R_MCDSXF_inj:=0;         a13M_MCDSXF_
 b14M_MCDSXF_inj:=0; b14U_MCDSXF_inj:=0; b14R_MCDSXF_inj:=0;         a14M_MCDSXF_inj:=0; a14U_MCDSXF_inj:=0; a14R_MCDSXF_inj:=0;
 b15M_MCDSXF_inj:=0; b15U_MCDSXF_inj:=0; b15R_MCDSXF_inj:=0;         a15M_MCDSXF_inj:=0; a15U_MCDSXF_inj:=0; a15R_MCDSXF_inj:=0;
 
+b1L_MCDSXF_inj :=0; b1T_MCDSXF_inj :=0;          a1L_MCDSXF_inj :=0; a1T_MCDSXF_inj :=0;
+b2L_MCDSXF_inj :=0; b2T_MCDSXF_inj :=0;          a2L_MCDSXF_inj :=0; a2T_MCDSXF_inj :=0;
+b3L_MCDSXF_inj :=0; b3T_MCDSXF_inj :=0;          a3L_MCDSXF_inj :=0; a3T_MCDSXF_inj :=0;
+b4L_MCDSXF_inj :=0; b4T_MCDSXF_inj :=0;          a4L_MCDSXF_inj :=0; a4T_MCDSXF_inj :=0;
+b5L_MCDSXF_inj :=0; b5T_MCDSXF_inj :=0;          a5L_MCDSXF_inj :=0; a5T_MCDSXF_inj :=0;
+b6L_MCDSXF_inj :=0; b6T_MCDSXF_inj :=0;          a6L_MCDSXF_inj :=0; a6T_MCDSXF_inj :=0;
+b7L_MCDSXF_inj :=0; b7T_MCDSXF_inj :=0;          a7L_MCDSXF_inj :=0; a7T_MCDSXF_inj :=0;
+b8L_MCDSXF_inj :=0; b8T_MCDSXF_inj :=0;          a8L_MCDSXF_inj :=0; a8T_MCDSXF_inj :=0;
+b9L_MCDSXF_inj :=0; b9T_MCDSXF_inj :=0;          a9L_MCDSXF_inj :=0; a9T_MCDSXF_inj :=0;
+b10L_MCDSXF_inj:=0; b10T_MCDSXF_inj:=0;          a10L_MCDSXF_inj:=0; a10T_MCDSXF_inj:=0;
+b11L_MCDSXF_inj:=0; b11T_MCDSXF_inj:=0;          a11L_MCDSXF_inj:=0; a11T_MCDSXF_inj:=0;
+b12L_MCDSXF_inj:=0; b12T_MCDSXF_inj:=0;          a12L_MCDSXF_inj:=0; a12T_MCDSXF_inj:=0;
+b13L_MCDSXF_inj:=0; b13T_MCDSXF_inj:=0;          a13L_MCDSXF_inj:=0; a13T_MCDSXF_inj:=0;
+b14L_MCDSXF_inj:=0; b14T_MCDSXF_inj:=0;          a14L_MCDSXF_inj:=0; a14T_MCDSXF_inj:=0;
+b15L_MCDSXF_inj:=0; b15T_MCDSXF_inj:=0;          a15L_MCDSXF_inj:=0; a15T_MCDSXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCDSXF_col :=0; b1U_MCDSXF_col :=0; b1R_MCDSXF_col :=0;         a1M_MCDSXF_col :=0; a1U_MCDSXF_col :=0; a1R_MCDSXF_col :=0;
 b2M_MCDSXF_col :=0; b2U_MCDSXF_col :=0; b2R_MCDSXF_col :=0;         a2M_MCDSXF_col :=0; a2U_MCDSXF_col :=0; a2R_MCDSXF_col :=0;
@@ -300,6 +506,22 @@ b12M_MCDSXF_col:=0; b12U_MCDSXF_col:=0; b12R_MCDSXF_col:=0;         a12M_MCDSXF_
 b13M_MCDSXF_col:=0; b13U_MCDSXF_col:=0; b13R_MCDSXF_col:=0;         a13M_MCDSXF_col:=0; a13U_MCDSXF_col:=0; a13R_MCDSXF_col:=0;
 b14M_MCDSXF_col:=0; b14U_MCDSXF_col:=0; b14R_MCDSXF_col:=0;         a14M_MCDSXF_col:=0; a14U_MCDSXF_col:=0; a14R_MCDSXF_col:=0;
 b15M_MCDSXF_col:=0; b15U_MCDSXF_col:=0; b15R_MCDSXF_col:=0;         a15M_MCDSXF_col:=0; a15U_MCDSXF_col:=0; a15R_MCDSXF_col:=0;
+
+b1L_MCDSXF_col :=0; b1T_MCDSXF_col :=0;          a1L_MCDSXF_col :=0; a1T_MCDSXF_col :=0;
+b2L_MCDSXF_col :=0; b2T_MCDSXF_col :=0;          a2L_MCDSXF_col :=0; a2T_MCDSXF_col :=0;
+b3L_MCDSXF_col :=0; b3T_MCDSXF_col :=0;          a3L_MCDSXF_col :=0; a3T_MCDSXF_col :=0;
+b4L_MCDSXF_col :=0; b4T_MCDSXF_col :=0;          a4L_MCDSXF_col :=0; a4T_MCDSXF_col :=0;
+b5L_MCDSXF_col :=0; b5T_MCDSXF_col :=0;          a5L_MCDSXF_col :=0; a5T_MCDSXF_col :=0;
+b6L_MCDSXF_col :=0; b6T_MCDSXF_col :=0;          a6L_MCDSXF_col :=0; a6T_MCDSXF_col :=0;
+b7L_MCDSXF_col :=0; b7T_MCDSXF_col :=0;          a7L_MCDSXF_col :=0; a7T_MCDSXF_col :=0;
+b8L_MCDSXF_col :=0; b8T_MCDSXF_col :=0;          a8L_MCDSXF_col :=0; a8T_MCDSXF_col :=0;
+b9L_MCDSXF_col :=0; b9T_MCDSXF_col :=0;          a9L_MCDSXF_col :=0; a9T_MCDSXF_col :=0;
+b10L_MCDSXF_col:=0; b10T_MCDSXF_col:=0;          a10L_MCDSXF_col:=0; a10T_MCDSXF_col:=0;
+b11L_MCDSXF_col:=0; b11T_MCDSXF_col:=0;          a11L_MCDSXF_col:=0; a11T_MCDSXF_col:=0;
+b12L_MCDSXF_col:=0; b12T_MCDSXF_col:=0;          a12L_MCDSXF_col:=0; a12T_MCDSXF_col:=0;
+b13L_MCDSXF_col:=0; b13T_MCDSXF_col:=0;          a13L_MCDSXF_col:=0; a13T_MCDSXF_col:=0;
+b14L_MCDSXF_col:=0; b14T_MCDSXF_col:=0;          a14L_MCDSXF_col:=0; a14T_MCDSXF_col:=0;
+b15L_MCDSXF_col:=0; b15T_MCDSXF_col:=0;          a15L_MCDSXF_col:=0; a15T_MCDSXF_col:=0;
 
 
 
@@ -324,6 +546,22 @@ b13M_MCTXF_inj:=0; b13U_MCTXF_inj:=0; b13R_MCTXF_inj:=0;         a13M_MCTXF_inj:
 b14M_MCTXF_inj:=0; b14U_MCTXF_inj:=0; b14R_MCTXF_inj:=0;         a14M_MCTXF_inj:=0; a14U_MCTXF_inj:=0; a14R_MCTXF_inj:=0;
 b15M_MCTXF_inj:=0; b15U_MCTXF_inj:=0; b15R_MCTXF_inj:=0;         a15M_MCTXF_inj:=0; a15U_MCTXF_inj:=0; a15R_MCTXF_inj:=0;
 
+b1L_MCTXF_inj :=0; b1T_MCTXF_inj :=0;          a1L_MCTXF_inj :=0; a1T_MCTXF_inj :=0;
+b2L_MCTXF_inj :=0; b2T_MCTXF_inj :=0;          a2L_MCTXF_inj :=0; a2T_MCTXF_inj :=0;
+b3L_MCTXF_inj :=0; b3T_MCTXF_inj :=0;          a3L_MCTXF_inj :=0; a3T_MCTXF_inj :=0;
+b4L_MCTXF_inj :=0; b4T_MCTXF_inj :=0;          a4L_MCTXF_inj :=0; a4T_MCTXF_inj :=0;
+b5L_MCTXF_inj :=0; b5T_MCTXF_inj :=0;          a5L_MCTXF_inj :=0; a5T_MCTXF_inj :=0;
+b6L_MCTXF_inj :=0; b6T_MCTXF_inj :=0;          a6L_MCTXF_inj :=0; a6T_MCTXF_inj :=0;
+b7L_MCTXF_inj :=0; b7T_MCTXF_inj :=0;          a7L_MCTXF_inj :=0; a7T_MCTXF_inj :=0;
+b8L_MCTXF_inj :=0; b8T_MCTXF_inj :=0;          a8L_MCTXF_inj :=0; a8T_MCTXF_inj :=0;
+b9L_MCTXF_inj :=0; b9T_MCTXF_inj :=0;          a9L_MCTXF_inj :=0; a9T_MCTXF_inj :=0;
+b10L_MCTXF_inj:=0; b10T_MCTXF_inj:=0;          a10L_MCTXF_inj:=0; a10T_MCTXF_inj:=0;
+b11L_MCTXF_inj:=0; b11T_MCTXF_inj:=0;          a11L_MCTXF_inj:=0; a11T_MCTXF_inj:=0;
+b12L_MCTXF_inj:=0; b12T_MCTXF_inj:=0;          a12L_MCTXF_inj:=0; a12T_MCTXF_inj:=0;
+b13L_MCTXF_inj:=0; b13T_MCTXF_inj:=0;          a13L_MCTXF_inj:=0; a13T_MCTXF_inj:=0;
+b14L_MCTXF_inj:=0; b14T_MCTXF_inj:=0;          a14L_MCTXF_inj:=0; a14T_MCTXF_inj:=0;
+b15L_MCTXF_inj:=0; b15T_MCTXF_inj:=0;          a15L_MCTXF_inj:=0; a15T_MCTXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCTXF_col :=0; b1U_MCTXF_col :=0; b1R_MCTXF_col :=0;         a1M_MCTXF_col :=0; a1U_MCTXF_col :=0; a1R_MCTXF_col :=0;
 b2M_MCTXF_col :=0; b2U_MCTXF_col :=0; b2R_MCTXF_col :=0;         a2M_MCTXF_col :=0; a2U_MCTXF_col :=0; a2R_MCTXF_col :=0;
@@ -340,6 +578,22 @@ b12M_MCTXF_col:=0; b12U_MCTXF_col:=0; b12R_MCTXF_col:=0;         a12M_MCTXF_col:
 b13M_MCTXF_col:=0; b13U_MCTXF_col:=0; b13R_MCTXF_col:=0;         a13M_MCTXF_col:=0; a13U_MCTXF_col:=0; a13R_MCTXF_col:=0;
 b14M_MCTXF_col:=0; b14U_MCTXF_col:=0; b14R_MCTXF_col:=0;         a14M_MCTXF_col:=0; a14U_MCTXF_col:=0; a14R_MCTXF_col:=0;
 b15M_MCTXF_col:=0; b15U_MCTXF_col:=0; b15R_MCTXF_col:=0;         a15M_MCTXF_col:=0; a15U_MCTXF_col:=0; a15R_MCTXF_col:=0;
+
+b1L_MCTXF_col :=0; b1T_MCTXF_col :=0;          a1L_MCTXF_col :=0; a1T_MCTXF_col :=0;
+b2L_MCTXF_col :=0; b2T_MCTXF_col :=0;          a2L_MCTXF_col :=0; a2T_MCTXF_col :=0;
+b3L_MCTXF_col :=0; b3T_MCTXF_col :=0;          a3L_MCTXF_col :=0; a3T_MCTXF_col :=0;
+b4L_MCTXF_col :=0; b4T_MCTXF_col :=0;          a4L_MCTXF_col :=0; a4T_MCTXF_col :=0;
+b5L_MCTXF_col :=0; b5T_MCTXF_col :=0;          a5L_MCTXF_col :=0; a5T_MCTXF_col :=0;
+b6L_MCTXF_col :=0; b6T_MCTXF_col :=0;          a6L_MCTXF_col :=0; a6T_MCTXF_col :=0;
+b7L_MCTXF_col :=0; b7T_MCTXF_col :=0;          a7L_MCTXF_col :=0; a7T_MCTXF_col :=0;
+b8L_MCTXF_col :=0; b8T_MCTXF_col :=0;          a8L_MCTXF_col :=0; a8T_MCTXF_col :=0;
+b9L_MCTXF_col :=0; b9T_MCTXF_col :=0;          a9L_MCTXF_col :=0; a9T_MCTXF_col :=0;
+b10L_MCTXF_col:=0; b10T_MCTXF_col:=0;          a10L_MCTXF_col:=0; a10T_MCTXF_col:=0;
+b11L_MCTXF_col:=0; b11T_MCTXF_col:=0;          a11L_MCTXF_col:=0; a11T_MCTXF_col:=0;
+b12L_MCTXF_col:=0; b12T_MCTXF_col:=0;          a12L_MCTXF_col:=0; a12T_MCTXF_col:=0;
+b13L_MCTXF_col:=0; b13T_MCTXF_col:=0;          a13L_MCTXF_col:=0; a13T_MCTXF_col:=0;
+b14L_MCTXF_col:=0; b14T_MCTXF_col:=0;          a14L_MCTXF_col:=0; a14T_MCTXF_col:=0;
+b15L_MCTXF_col:=0; b15T_MCTXF_col:=0;          a15L_MCTXF_col:=0; a15T_MCTXF_col:=0;
 
 
 
@@ -364,6 +618,22 @@ b13M_MCTSXF_inj:=0; b13U_MCTSXF_inj:=0; b13R_MCTSXF_inj:=0;         a13M_MCTSXF_
 b14M_MCTSXF_inj:=0; b14U_MCTSXF_inj:=0; b14R_MCTSXF_inj:=0;         a14M_MCTSXF_inj:=0; a14U_MCTSXF_inj:=0; a14R_MCTSXF_inj:=0;
 b15M_MCTSXF_inj:=0; b15U_MCTSXF_inj:=0; b15R_MCTSXF_inj:=0;         a15M_MCTSXF_inj:=0; a15U_MCTSXF_inj:=0; a15R_MCTSXF_inj:=0;
 
+b1L_MCTSXF_inj :=0; b1T_MCTSXF_inj :=0;          a1L_MCTSXF_inj :=0; a1T_MCTSXF_inj :=0;
+b2L_MCTSXF_inj :=0; b2T_MCTSXF_inj :=0;          a2L_MCTSXF_inj :=0; a2T_MCTSXF_inj :=0;
+b3L_MCTSXF_inj :=0; b3T_MCTSXF_inj :=0;          a3L_MCTSXF_inj :=0; a3T_MCTSXF_inj :=0;
+b4L_MCTSXF_inj :=0; b4T_MCTSXF_inj :=0;          a4L_MCTSXF_inj :=0; a4T_MCTSXF_inj :=0;
+b5L_MCTSXF_inj :=0; b5T_MCTSXF_inj :=0;          a5L_MCTSXF_inj :=0; a5T_MCTSXF_inj :=0;
+b6L_MCTSXF_inj :=0; b6T_MCTSXF_inj :=0;          a6L_MCTSXF_inj :=0; a6T_MCTSXF_inj :=0;
+b7L_MCTSXF_inj :=0; b7T_MCTSXF_inj :=0;          a7L_MCTSXF_inj :=0; a7T_MCTSXF_inj :=0;
+b8L_MCTSXF_inj :=0; b8T_MCTSXF_inj :=0;          a8L_MCTSXF_inj :=0; a8T_MCTSXF_inj :=0;
+b9L_MCTSXF_inj :=0; b9T_MCTSXF_inj :=0;          a9L_MCTSXF_inj :=0; a9T_MCTSXF_inj :=0;
+b10L_MCTSXF_inj:=0; b10T_MCTSXF_inj:=0;          a10L_MCTSXF_inj:=0; a10T_MCTSXF_inj:=0;
+b11L_MCTSXF_inj:=0; b11T_MCTSXF_inj:=0;          a11L_MCTSXF_inj:=0; a11T_MCTSXF_inj:=0;
+b12L_MCTSXF_inj:=0; b12T_MCTSXF_inj:=0;          a12L_MCTSXF_inj:=0; a12T_MCTSXF_inj:=0;
+b13L_MCTSXF_inj:=0; b13T_MCTSXF_inj:=0;          a13L_MCTSXF_inj:=0; a13T_MCTSXF_inj:=0;
+b14L_MCTSXF_inj:=0; b14T_MCTSXF_inj:=0;          a14L_MCTSXF_inj:=0; a14T_MCTSXF_inj:=0;
+b15L_MCTSXF_inj:=0; b15T_MCTSXF_inj:=0;          a15L_MCTSXF_inj:=0; a15T_MCTSXF_inj:=0;
+
 ! ----------------------------- COLLISION ------------------------------------------------------------------------------------
 b1M_MCTSXF_col :=0; b1U_MCTSXF_col :=0; b1R_MCTSXF_col :=0;         a1M_MCTSXF_col :=0; a1U_MCTSXF_col :=0; a1R_MCTSXF_col :=0;
 b2M_MCTSXF_col :=0; b2U_MCTSXF_col :=0; b2R_MCTSXF_col :=0;         a2M_MCTSXF_col :=0; a2U_MCTSXF_col :=0; a2R_MCTSXF_col :=0;
@@ -380,6 +650,22 @@ b12M_MCTSXF_col:=0; b12U_MCTSXF_col:=0; b12R_MCTSXF_col:=0;         a12M_MCTSXF_
 b13M_MCTSXF_col:=0; b13U_MCTSXF_col:=0; b13R_MCTSXF_col:=0;         a13M_MCTSXF_col:=0; a13U_MCTSXF_col:=0; a13R_MCTSXF_col:=0;
 b14M_MCTSXF_col:=0; b14U_MCTSXF_col:=0; b14R_MCTSXF_col:=0;         a14M_MCTSXF_col:=0; a14U_MCTSXF_col:=0; a14R_MCTSXF_col:=0;
 b15M_MCTSXF_col:=0; b15U_MCTSXF_col:=0; b15R_MCTSXF_col:=0;         a15M_MCTSXF_col:=0; a15U_MCTSXF_col:=0; a15R_MCTSXF_col:=0;
+
+b1L_MCTSXF_col :=0; b1T_MCTSXF_col :=0;          a1L_MCTSXF_col :=0; a1T_MCTSXF_col :=0;
+b2L_MCTSXF_col :=0; b2T_MCTSXF_col :=0;          a2L_MCTSXF_col :=0; a2T_MCTSXF_col :=0;
+b3L_MCTSXF_col :=0; b3T_MCTSXF_col :=0;          a3L_MCTSXF_col :=0; a3T_MCTSXF_col :=0;
+b4L_MCTSXF_col :=0; b4T_MCTSXF_col :=0;          a4L_MCTSXF_col :=0; a4T_MCTSXF_col :=0;
+b5L_MCTSXF_col :=0; b5T_MCTSXF_col :=0;          a5L_MCTSXF_col :=0; a5T_MCTSXF_col :=0;
+b6L_MCTSXF_col :=0; b6T_MCTSXF_col :=0;          a6L_MCTSXF_col :=0; a6T_MCTSXF_col :=0;
+b7L_MCTSXF_col :=0; b7T_MCTSXF_col :=0;          a7L_MCTSXF_col :=0; a7T_MCTSXF_col :=0;
+b8L_MCTSXF_col :=0; b8T_MCTSXF_col :=0;          a8L_MCTSXF_col :=0; a8T_MCTSXF_col :=0;
+b9L_MCTSXF_col :=0; b9T_MCTSXF_col :=0;          a9L_MCTSXF_col :=0; a9T_MCTSXF_col :=0;
+b10L_MCTSXF_col:=0; b10T_MCTSXF_col:=0;          a10L_MCTSXF_col:=0; a10T_MCTSXF_col:=0;
+b11L_MCTSXF_col:=0; b11T_MCTSXF_col:=0;          a11L_MCTSXF_col:=0; a11T_MCTSXF_col:=0;
+b12L_MCTSXF_col:=0; b12T_MCTSXF_col:=0;          a12L_MCTSXF_col:=0; a12T_MCTSXF_col:=0;
+b13L_MCTSXF_col:=0; b13T_MCTSXF_col:=0;          a13L_MCTSXF_col:=0; a13T_MCTSXF_col:=0;
+b14L_MCTSXF_col:=0; b14T_MCTSXF_col:=0;          a14L_MCTSXF_col:=0; a14T_MCTSXF_col:=0;
+b15L_MCTSXF_col:=0; b15T_MCTSXF_col:=0;          a15L_MCTSXF_col:=0; a15T_MCTSXF_col:=0;
 
 
 

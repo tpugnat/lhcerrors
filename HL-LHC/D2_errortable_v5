@@ -119,7 +119,7 @@ b7L_MBRD_col  :=-0.660 ;b7T_MBRD_col  := 0.660 ;
 b8L_MBRD_col  :=-0.110 ;b8T_MBRD_col  := 0.110 ;
 b9L_MBRD_col  :=-0.260 ;b9T_MBRD_col  := 0.260 ;
 b10L_MBRD_col :=-0.030 ;b10T_MBRD_col := 0.030 ;
-b11L_MBRD_col :=-0.760 ;b11T_MBRD_col := 0.760 ;
+b11L_MBRD_col :=-0.076 ;b11T_MBRD_col := 0.076 ;
 b12L_MBRD_col :=-0.000 ;b12T_MBRD_col := 0.000 ;
 b13L_MBRD_col :=-0.000 ;b13T_MBRD_col := 0.000 ;
 b14L_MBRD_col :=-0.000 ;b14T_MBRD_col := 0.000 ;
