@@ -202,54 +202,70 @@ new_magnetfamily_MQ(typm) : macro ={
 
 new_magnetindividual_mult(typm,nrj) : macro ={
   if (use_uniform_error_distribution==1){
-    print,text="Using uniform distribution for individual magnet from Magnet family : typm";
-    b1D  = ( b1T_tmp_nrj  - b1L_tmp_nrj  ); a1D  = ( a1T_tmp_nrj  - a1L_tmp_nrj  );
-    b2D  = ( b2T_tmp_nrj  - b2L_tmp_nrj  ); a2D  = ( a2T_tmp_nrj  - a2L_tmp_nrj  );
-    b3D  = ( b3T_tmp_nrj  - b3L_tmp_nrj  ); a3D  = ( a3T_tmp_nrj  - a3L_tmp_nrj  );
-    b4D  = ( b4T_tmp_nrj  - b4L_tmp_nrj  ); a4D  = ( a4T_tmp_nrj  - a4L_tmp_nrj  );
-    b5D  = ( b5T_tmp_nrj  - b5L_tmp_nrj  ); a5D  = ( a5T_tmp_nrj  - a5L_tmp_nrj  );
-    b6D  = ( b6T_tmp_nrj  - b6L_tmp_nrj  ); a6D  = ( a6T_tmp_nrj  - a6L_tmp_nrj  );
-    b7D  = ( b7T_tmp_nrj  - b7L_tmp_nrj  ); a7D  = ( a7T_tmp_nrj  - a7L_tmp_nrj  );
-    b8D  = ( b8T_tmp_nrj  - b8L_tmp_nrj  ); a8D  = ( a8T_tmp_nrj  - a8L_tmp_nrj  );
-    b9D  = ( b9T_tmp_nrj  - b9L_tmp_nrj  ); a9D  = ( a9T_tmp_nrj  - a9L_tmp_nrj  );
-    b10D = ( b10T_tmp_nrj - b10L_tmp_nrj ); a10D = ( a10T_tmp_nrj - a01L_tmp_nrj );
-    b11D = ( b11T_tmp_nrj - b11L_tmp_nrj ); a11D = ( a11T_tmp_nrj - a11L_tmp_nrj );
-    b12D = ( b12T_tmp_nrj - b12L_tmp_nrj ); a12D = ( a12T_tmp_nrj - a12L_tmp_nrj );
-    b13D = ( b13T_tmp_nrj - b13L_tmp_nrj ); a13D = ( a13T_tmp_nrj - a13L_tmp_nrj );
-    b14D = ( b14T_tmp_nrj - b14L_tmp_nrj ); a14D = ( a14T_tmp_nrj - a14L_tmp_nrj );
-    b15D = ( b15T_tmp_nrj - b15L_tmp_nrj ); a15D = ( a15T_tmp_nrj - a15L_tmp_nrj );
+    print,text="Using uniform distribution for individual magnet from Magnet family : typm (nrj)";
+    printf, text="b1T-b15T: %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F",
+      value=b1T_tymp_nrj ,b2T_tymp_nrj ,b3T_tymp_nrj ,b4T_tymp_nrj ,b5T_tymp_nrj,
+            b6T_tymp_nrj ,b7T_tymp_nrj ,b8T_tymp_nrj ,b9T_tymp_nrj ,b10T_tymp_nrj,
+            b11T_tymp_nrj,b12T_tymp_nrj,b13T_tymp_nrj,b14T_tymp_nrj,b15T_tymp_nrj;
+    printf, text="a1T-a15T: %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F",
+      value=a1T_tymp_nrj ,a2T_tymp_nrj ,a3T_tymp_nrj ,a4T_tymp_nrj ,a5T_tymp_nrj,
+            a6T_tymp_nrj ,a7T_tymp_nrj ,a8T_tymp_nrj ,a9T_tymp_nrj ,a10T_tymp_nrj,
+            a11T_tymp_nrj,a12T_tymp_nrj,a13T_tymp_nrj,a14T_tymp_nrj,a15T_tymp_nrj;
+    printf, text="b1L-b15L: %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F",
+      value=b1L_tymp_nrj ,b2L_tymp_nrj ,b3L_tymp_nrj ,b4L_tymp_nrj ,b5L_tymp_nrj,
+            b6L_tymp_nrj ,b7L_tymp_nrj ,b8L_tymp_nrj ,b9L_tymp_nrj ,b10L_tymp_nrj,
+            b11L_tymp_nrj,b12L_tymp_nrj,b13L_tymp_nrj,b14L_tymp_nrj,b15L_tymp_nrj;
+    printf, text="a1L-a15L: %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F, %F",
+      value=a1L_tymp_nrj ,a2L_tymp_nrj ,a3L_tymp_nrj ,a4L_tymp_nrj ,a5L_tymp_nrj,
+            a6L_tymp_nrj ,a7L_tymp_nrj ,a8L_tymp_nrj ,a9L_tymp_nrj ,a10L_tymp_nrj,
+            a11L_tymp_nrj,a12L_tymp_nrj,a13L_tymp_nrj,a14L_tymp_nrj,a15L_tymp_nrj;
+    b1dd  = ( b1T_tymp_nrj  - b1L_tymp_nrj  ); a1dd  = ( a1T_tymp_nrj  - a1L_tymp_nrj  );
+    b2dd  = ( b2T_tymp_nrj  - b2L_tymp_nrj  ); a2dd  = ( a2T_tymp_nrj  - a2L_tymp_nrj  );
+    b3dd  = ( b3T_tymp_nrj  - b3L_tymp_nrj  ); a3dd  = ( a3T_tymp_nrj  - a3L_tymp_nrj  );
+    b4dd  = ( b4T_tymp_nrj  - b4L_tymp_nrj  ); a4dd  = ( a4T_tymp_nrj  - a4L_tymp_nrj  );
+    b5dd  = ( b5T_tymp_nrj  - b5L_tymp_nrj  ); a5dd  = ( a5T_tymp_nrj  - a5L_tymp_nrj  );
+    b6dd  = ( b6T_tymp_nrj  - b6L_tymp_nrj  ); a6dd  = ( a6T_tymp_nrj  - a6L_tymp_nrj  );
+    b7dd  = ( b7T_tymp_nrj  - b7L_tymp_nrj  ); a7dd  = ( a7T_tymp_nrj  - a7L_tymp_nrj  );
+    b8dd  = ( b8T_tymp_nrj  - b8L_tymp_nrj  ); a8dd  = ( a8T_tymp_nrj  - a8L_tymp_nrj  );
+    b9dd  = ( b9T_tymp_nrj  - b9L_tymp_nrj  ); a9dd  = ( a9T_tymp_nrj  - a9L_tymp_nrj  );
+    b10dd = ( b10T_tymp_nrj - b10L_tymp_nrj ); a10dd = ( a10T_tymp_nrj - a01L_tymp_nrj );
+    b11dd = ( b11T_tymp_nrj - b11L_tymp_nrj ); a11dd = ( a11T_tymp_nrj - a11L_tymp_nrj );
+    b12dd = ( b12T_tymp_nrj - b12L_tymp_nrj ); a12dd = ( a12T_tymp_nrj - a12L_tymp_nrj );
+    b13dd = ( b13T_tymp_nrj - b13L_tymp_nrj ); a13dd = ( a13T_tymp_nrj - a13L_tymp_nrj );
+    b14dd = ( b14T_tymp_nrj - b14L_tymp_nrj ); a14dd = ( a14T_tymp_nrj - a14L_tymp_nrj );
+    b15dd = ( b15T_tymp_nrj - b15L_tymp_nrj ); a15dd = ( a15T_tymp_nrj - a15L_tymp_nrj );
 
-    b1ssr   = 1E-4 * (ON_B1S  * b1ss   + ON_B1R  * ( b1D  * RANF() + b1L_typm_nrj  ) );
-    b2ssr   = 1E-4 * (ON_B2S  * b2ss   + ON_B2R  * ( b2D  * RANF() + b2L_typm_nrj  ) );
-    b3ssr   = 1E-4 * (ON_B3S  * b3ss   + ON_B3R  * ( b3D  * RANF() + b3L_typm_nrj  ) );
-    b4ssr   = 1E-4 * (ON_B4S  * b4ss   + ON_B4R  * ( b4D  * RANF() + b4L_typm_nrj  ) );
-    b5ssr   = 1E-4 * (ON_B5S  * b5ss   + ON_B5R  * ( b5D  * RANF() + b5L_typm_nrj  ) );
-    b6ssr   = 1E-4 * (ON_B6S  * b6ss   + ON_B6R  * ( b6D  * RANF() + b6L_typm_nrj  ) );
-    b7ssr   = 1E-4 * (ON_B7S  * b7ss   + ON_B7R  * ( b7D  * RANF() + b7L_typm_nrj  ) );
-    b8ssr   = 1E-4 * (ON_B8S  * b8ss   + ON_B8R  * ( b8D  * RANF() + b8L_typm_nrj  ) );
-    b9ssr   = 1E-4 * (ON_B9S  * b9ss   + ON_B9R  * ( b9D  * RANF() + b9L_typm_nrj  ) );
-    b10ssr  = 1E-4 * (ON_B10S * b10ss  + ON_B10R * ( b10D * RANF() + b10L_typm_nrj ) );
-    b11ssr  = 1E-4 * (ON_B11S * b11ss  + ON_B11R * ( b11D * RANF() + b11L_typm_nrj ) );
-    b12ssr  = 1E-4 * (ON_B12S * b12ss  + ON_B12R * ( b12D * RANF() + b12L_typm_nrj ) );
-    b13ssr  = 1E-4 * (ON_B13S * b13ss  + ON_B13R * ( b13D * RANF() + b13L_typm_nrj ) );
-    b14ssr  = 1E-4 * (ON_B14S * b14ss  + ON_B14R * ( b14D * RANF() + b14L_typm_nrj ) );
-    b15ssr  = 1E-4 * (ON_B15S * b15ss  + ON_B15R * ( b15D * RANF() + b15L_typm_nrj ) );
+    b1ssr   = 1E-4 * (ON_B1R  * ( b1dd  * RANF() + b1L_typm_nrj  ) );
+    b2ssr   = 1E-4 * (ON_B2R  * ( b2dd  * RANF() + b2L_typm_nrj  ) );
+    b3ssr   = 1E-4 * (ON_B3R  * ( b3dd  * RANF() + b3L_typm_nrj  ) );
+    b4ssr   = 1E-4 * (ON_B4R  * ( b4dd  * RANF() + b4L_typm_nrj  ) );
+    b5ssr   = 1E-4 * (ON_B5R  * ( b5dd  * RANF() + b5L_typm_nrj  ) );
+    b6ssr   = 1E-4 * (ON_B6R  * ( b6dd  * RANF() + b6L_typm_nrj  ) );
+    b7ssr   = 1E-4 * (ON_B7R  * ( b7dd  * RANF() + b7L_typm_nrj  ) );
+    b8ssr   = 1E-4 * (ON_B8R  * ( b8dd  * RANF() + b8L_typm_nrj  ) );
+    b9ssr   = 1E-4 * (ON_B9R  * ( b9dd  * RANF() + b9L_typm_nrj  ) );
+    b10ssr  = 1E-4 * (ON_B10R * ( b10dd * RANF() + b10L_typm_nrj ) );
+    b11ssr  = 1E-4 * (ON_B11R * ( b11dd * RANF() + b11L_typm_nrj ) );
+    b12ssr  = 1E-4 * (ON_B12R * ( b12dd * RANF() + b12L_typm_nrj ) );
+    b13ssr  = 1E-4 * (ON_B13R * ( b13dd * RANF() + b13L_typm_nrj ) );
+    b14ssr  = 1E-4 * (ON_B14R * ( b14dd * RANF() + b14L_typm_nrj ) );
+    b15ssr  = 1E-4 * (ON_B15R * ( b15dd * RANF() + b15L_typm_nrj ) );
 
-    a1ssr   = 1E-4 * (ON_A1S  * a1ss   + ON_A1R  * ( a1D  * RANF() + a1L_typm_nrj  ) );
-    a2ssr   = 1E-4 * (ON_A2S  * a2ss   + ON_A2R  * ( a2D  * RANF() + a2L_typm_nrj  ) );
-    a3ssr   = 1E-4 * (ON_A3S  * a3ss   + ON_A3R  * ( a3D  * RANF() + a3L_typm_nrj  ) );
-    a4ssr   = 1E-4 * (ON_A4S  * a4ss   + ON_A4R  * ( a4D  * RANF() + a4L_typm_nrj  ) );
-    a5ssr   = 1E-4 * (ON_A5S  * a5ss   + ON_A5R  * ( a5D  * RANF() + a5L_typm_nrj  ) );
-    a6ssr   = 1E-4 * (ON_A6S  * a6ss   + ON_A6R  * ( a6D  * RANF() + a6L_typm_nrj  ) );
-    a7ssr   = 1E-4 * (ON_A7S  * a7ss   + ON_A7R  * ( a7D  * RANF() + a7L_typm_nrj  ) );
-    a8ssr   = 1E-4 * (ON_A8S  * a8ss   + ON_A8R  * ( a8D  * RANF() + a8L_typm_nrj  ) );
-    a9ssr   = 1E-4 * (ON_A9S  * a9ss   + ON_A9R  * ( a9D  * RANF() + a9L_typm_nrj  ) );
-    a10ssr  = 1E-4 * (ON_A10S * a10ss  + ON_A10R * ( a10D * RANF() + a10L_typm_nrj ) );
-    a11ssr  = 1E-4 * (ON_A11S * a11ss  + ON_A11R * ( a11D * RANF() + a11L_typm_nrj ) );
-    a12ssr  = 1E-4 * (ON_A12S * a12ss  + ON_A12R * ( a12D * RANF() + a12L_typm_nrj ) );
-    a13ssr  = 1E-4 * (ON_A13S * a13ss  + ON_A13R * ( a13D * RANF() + a13L_typm_nrj ) );
-    a14ssr  = 1E-4 * (ON_A14S * a14ss  + ON_A14R * ( a14D * RANF() + a14L_typm_nrj ) );
-    a15ssr  = 1E-4 * (ON_A15S * a15ss  + ON_A15R * ( a15D * RANF() + a15L_typm_nrj ) );
+    a1ssr   = 1E-4 * (ON_A1R  * ( a1dd  * RANF() + a1L_typm_nrj  ) );
+    a2ssr   = 1E-4 * (ON_A2R  * ( a2dd  * RANF() + a2L_typm_nrj  ) );
+    a3ssr   = 1E-4 * (ON_A3R  * ( a3dd  * RANF() + a3L_typm_nrj  ) );
+    a4ssr   = 1E-4 * (ON_A4R  * ( a4dd  * RANF() + a4L_typm_nrj  ) );
+    a5ssr   = 1E-4 * (ON_A5R  * ( a5dd  * RANF() + a5L_typm_nrj  ) );
+    a6ssr   = 1E-4 * (ON_A6R  * ( a6dd  * RANF() + a6L_typm_nrj  ) );
+    a7ssr   = 1E-4 * (ON_A7R  * ( a7dd  * RANF() + a7L_typm_nrj  ) );
+    a8ssr   = 1E-4 * (ON_A8R  * ( a8dd  * RANF() + a8L_typm_nrj  ) );
+    a9ssr   = 1E-4 * (ON_A9R  * ( a9dd  * RANF() + a9L_typm_nrj  ) );
+    a10ssr  = 1E-4 * (ON_A10R * ( a10dd * RANF() + a10L_typm_nrj ) );
+    a11ssr  = 1E-4 * (ON_A11R * ( a11dd * RANF() + a11L_typm_nrj ) );
+    a12ssr  = 1E-4 * (ON_A12R * ( a12dd * RANF() + a12L_typm_nrj ) );
+    a13ssr  = 1E-4 * (ON_A13R * ( a13dd * RANF() + a13L_typm_nrj ) );
+    a14ssr  = 1E-4 * (ON_A14R * ( a14dd * RANF() + a14L_typm_nrj ) );
+    a15ssr  = 1E-4 * (ON_A15R * ( a15dd * RANF() + a15L_typm_nrj ) );
   } else {
     b1ssr   = 1E-4 * (ON_B1S  * b1ss   + ON_B1R  * b1R_typm_nrj   * TGAUSS(3.) );
     b2ssr   = 1E-4 * (ON_B2S  * b2ss   + ON_B2R  * b2R_typm_nrj   * TGAUSS(3.) );
