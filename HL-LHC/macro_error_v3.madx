@@ -202,6 +202,7 @@ new_magnetfamily_MQ(typm) : macro ={
 
 new_magnetindividual_mult(typm,nrj) : macro ={
   if (use_uniform_error_distribution==1){
+    print,text="Using uniform distribution for individual magnet from Magnet family : typm";
     b1D  = ( b1T_tmp_nrj  - b1L_tmp_nrj  ); a1D  = ( a1T_tmp_nrj  - a1L_tmp_nrj  );
     b2D  = ( b2T_tmp_nrj  - b2L_tmp_nrj  ); a2D  = ( a2T_tmp_nrj  - a2L_tmp_nrj  );
     b3D  = ( b3T_tmp_nrj  - b3L_tmp_nrj  ); a3D  = ( a3T_tmp_nrj  - a3L_tmp_nrj  );
