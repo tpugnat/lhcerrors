@@ -219,6 +219,11 @@ new_magnetindividual_mult(typm,nrj) : macro ={
       value=a1L_tymp_nrj ,a2L_tymp_nrj ,a3L_tymp_nrj ,a4L_tymp_nrj ,a5L_tymp_nrj,
             a6L_tymp_nrj ,a7L_tymp_nrj ,a8L_tymp_nrj ,a9L_tymp_nrj ,a10L_tymp_nrj,
             a11L_tymp_nrj,a12L_tymp_nrj,a13L_tymp_nrj,a14L_tymp_nrj,a15L_tymp_nrj;
+            
+    
+    printf, text="b3T_tymp_nrj: %F, b3M_tymp_nrj: %F, b3R_tymp_nrj: %F",
+      value=b3T_tymp_nrj ,b3M_tymp_nrj ,b3R_tymp_nrj;
+
     b1dd  = ( b1T_tymp_nrj  - b1L_tymp_nrj  ); a1dd  = ( a1T_tymp_nrj  - a1L_tymp_nrj  );
     b2dd  = ( b2T_tymp_nrj  - b2L_tymp_nrj  ); a2dd  = ( a2T_tymp_nrj  - a2L_tymp_nrj  );
     b3dd  = ( b3T_tymp_nrj  - b3L_tymp_nrj  ); a3dd  = ( a3T_tymp_nrj  - a3L_tymp_nrj  );
