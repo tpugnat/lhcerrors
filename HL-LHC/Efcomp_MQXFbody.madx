@@ -15,6 +15,10 @@ abbnnnU_MQXFttt_col:=           abbnnnU_MQXF_col;
 abbnnnU_MQXFttt_inj:=           abbnnnU_MQXF_inj;
 abbnnnR_MQXFttt_col:=           abbnnnR_MQXF_col;
 abbnnnR_MQXFttt_inj:=           abbnnnR_MQXF_inj;
+abbnnnL_MQXFttt_col:=           abbnnnL_MQXF_col;
+abbnnnL_MQXFttt_inj:=           abbnnnL_MQXF_inj;
+abbnnnT_MQXFttt_col:=           abbnnnT_MQXF_col;
+abbnnnT_MQXFttt_inj:=           abbnnnT_MQXF_inj;
 };
 
 makeAB2(abb,nnn) : macro = {
